@@ -33,6 +33,15 @@ A detailed document can be found in link readthedocs.io
 
 ## The interactive version
 
+### Credits
+
+- The idea, major codes, and notebooks of this project is contributed by `Jianheng Liu` (https://orcid.org/0000-0003-0216-1951) at Rui Zhang's Lab (Jan, 2022).
+- The interactive version developed on Plotly is contributed `Jing Yao` at Rui Zhang's lab (Jan, 2022).
+
 ### Contact
 
+For any bugs, please post them in `Isuues`. You can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
+
 ### Citation
+
+NaN
