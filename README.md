@@ -40,7 +40,7 @@ A detailed document can be found in link readthedocs.io
 
 ### Contact
 
-For any bugs, please post them in `Isuues`. You can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
+For any bugs, please post them in `Issues`. You can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
 
 ### Citation
 
