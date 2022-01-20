@@ -1,4 +1,4 @@
-## Welcome!
+# Welcome!
 
 Are you curious about what's the picture for?
 
@@ -12,4 +12,27 @@ This is amazing picture is from the UMAP projection of the 21-nt sequences of **
 
 Compared with canonical analysis, such as using MEME to scan for motifs in specific lengths of windows, this strategy works much faster, especially with large dataset (>10000 sites). Meanwhile, visulization itself can enable you to notice the distribution of noise, and perceive abnormal clusters even they are in low amount.
 
+A detailed document can be found in link readthedocs.io
 
+## Contents 
+- Requirement
+- Basic usage
+- Examples
+- GPU accerlation
+- The interactive version
+- Contact
+- Citation
+
+## Requirement
+
+## Basic usage
+
+## Examples
+
+## GPU accerlation
+
+## The interactive version
+
+### Contact
+
+### Citation
