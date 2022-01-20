@@ -2,7 +2,7 @@
 
 Are you curious about what's the picture for?
 
-<img src=https://user-images.githubusercontent.com/20188476/150387619-6ca84c54-40e3-4048-a392-c2857e3b1669.png width=80% />
+<img src=https://user-images.githubusercontent.com/20188476/150387619-6ca84c54-40e3-4048-a392-c2857e3b1669.png width=100% />
 
 This is amazing picture is from the UMAP projection of the 21-nt sequences of **999,240** human A-to-I RNA editing sites (in non-Alu repeats) in REDIportal! For this picture, we can intuitively learn what kinds of k-mers (21-mers here) are included and enriched in such huge amount of RNA editing events. This is never been done before.
 
