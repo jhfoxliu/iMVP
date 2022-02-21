@@ -27,6 +27,8 @@ iMVP is currently not a single package. We provide two ways to apply iMVP in you
   - `m6A_nanopore.ipynb` is for phase-matching stratey for Nanopore modification discovery (one-to-many). 
   - `Benchmarking_[xxx].ipynb` are Notebooks for method and parameter selection guidances. 
 
+More background knowledge for `UMAP` and `HDBSCAN` can be found here (https://umap-learn.readthedocs.io/en/latest/) and here (https://hdbscan.readthedocs.io/en/latest/).
+
 ## Requirements
 
 We use `Python 3` in iMVP. We list the packages required in each notebook. In summary, we require `pandas`, `numpy`, `umap-learn`, `hdbscan`, `scipy`, `matplotlib`, and `seaborn` for most of the usages. For some cases, `scikit-learn` should be isntalled for benchmarking. We recommend you to install `Weblogo` and `MEME` for further analysis of the clusters.
@@ -34,8 +36,6 @@ We use `Python 3` in iMVP. We list the packages required in each notebook. In su
 For `Linux` (and probably for `MacOS`), all of the packages and softwares are available on Pypi (with `pip`) or on the official websites.
 
 We don't recommend running iMVP with `Windows`. Please note that, `hdbscan` from Pypi is not compatible, instead, you can get an wheels (https://www.lfd.uci.edu/~gohlke/pythonlibs/) with some troubles with multi-threads (please modify `core_n_jobs` if you get some troubles). In addition, `Weblogo` and `MEME` are not available on Windows, too. 
-
-**Background knowledge** HDBSCAN
 
 ## GPU accerlation
 
@@ -47,12 +47,12 @@ Please note that, we can speed up `UMAP` with `RRAPIDS` in more than 40-folds. B
 
 The interactive version of iMVP is here ().
 
-### Credits
+## Credits
 
 - The idea, major codes, and notebooks are contributed by `Jianheng Liu` (https://orcid.org/0000-0003-0216-1951) at Rui Zhang's Lab (Jan, 2022).
 - The interactive version is contributed `Jing Yao` at Rui Zhang's lab (Jan, 2022).
 
-### Contact
+## Contact
 
 For any bugs, please post them in `Issues`. 
 
@@ -60,6 +60,6 @@ For the issues about iMVP framework, you can also contact `Jiangheng Liu` (jhfox
 
 For the issues about the interactive interface (bugs, feature requests, and etc.), please contact `Jing Yao`.
 
-### Citation
+## Citation
 
 NaN
