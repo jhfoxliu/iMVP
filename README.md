@@ -20,49 +20,45 @@ A detailed document can be found in link readthedocs.io. (Coming soon).
 
 iMVP is currently not a single package. We provide two ways to apply iMVP in your analysis:
 - For new users not experienced in Python, we suggest you to use our interactive interface for quick analysis.
-- For advanced users, we suggest you to follow our `Notebooks` (`HeLa_Noc.ipynb` and `Human_dev.ipynb`) to learn the details of iMVP. 
+- For advanced users, we suggest you to follow our `Notebooks` (method-to-modifications):
+  - `HeLa_Noc.ipynb` and `Human_dev.ipynb` are for the basics construction of an iMVP analysis (one-to-one).
+  - `m6A_methods.ipynb` and `PseudoU_methods.ipynb` are for the comparative analysis of different methods for RNA modification discovery (one-to-several).
+  - `RNA_seq_var.ipynb` is for modification discovery from RNA-seq variants (one-to-many).
+  - `m6A_nanopore.ipynb` is for phase-matching stratey for Nanopore modification discovery (one-to-many). 
+  - `Benchmarking_[xxx].ipynb` are Notebooks for method and parameter selection guidances. 
 
-## Contents 
-- Requirement
-- Basic usage
-- Examples
-- GPU accerlation
-- The interactive version
-- Contact
-- Citation
-
-## Requirement
+## Requirements
 
 We use `Python 3` in iMVP. We list the packages required in each notebook. In summary, we require `pandas`, `numpy`, `umap-learn`, `hdbscan`, `scipy`, `matplotlib`, and `seaborn` for most of the usages. For some cases, `scikit-learn` should be isntalled for benchmarking. We recommend you to install `Weblogo` and `MEME` for further analysis of the clusters.
 
-For Linux, all of the packages and softwares are available on Pypi (with `Pip`) or on the official websites.
+For `Linux` (and probably for `MacOS`), all of the packages and softwares are available on Pypi (with `pip`) or on the official websites.
 
-For Windows, `Weblogo` and `MEME` might not be avilable. `hdbscan` from Pypi is not compatible but can be install via unofficial wheels (https://www.lfd.uci.edu/~gohlke/pythonlibs/). Meanwhile, while computing large dataset, a time out error will happen if `core_n_jobs` in `hdbscan` is larger than 1.
-
-## Basic usage and examples
-
-I don't think packing all the functions into a class is a good idea for this project. Everything can done with native objects of python and pandas. To make it clear, I provide a set of helper functions in the folder `Utils`, and I define all of the used functions in each notebook.
+We don't recommend running iMVP with `Windows`. Please note that, `hdbscan` from Pypi is not compatible, instead, you can get an wheels (https://www.lfd.uci.edu/~gohlke/pythonlibs/) with some troubles with multi-threads (please modify `core_n_jobs` if you get some troubles). In addition, `Weblogo` and `MEME` are not available on Windows, too. 
 
 **Background knowledge** HDBSCAN
 
 ## GPU accerlation
 
-To achieve analysis in huge dataset, we use NVIDIA `RAPIDS` library (majorly `cuML`) to accelerate `UMAP` and `HDBSCAN`. Please visit the office pages for more information.
+To achieve analysis with huge dataset, we use NVIDIA `RAPIDS` library (majorly `cuML`) to accelerate `UMAP` and `HDBSCAN`. Please visit the office pages for more information.
 
-Please note that, we can speed up `UMAP` with `RRAPIDS` in more than 10-folds. But it's hard for `HDBSCAN`, because we will have various computational complexity with different data and different parameters. I offen get out of GPU memory if too many small clusters are wating for analyzing. Hence, the current best practices for large dataset (e.g., 40 million non-repeative editing sites) is to use `UMAP` to compute the corrdinates on the 2D plane, then process the projections to CPU version `HDBSCAN` for further clustering. We also notice that, soft-clustering strategy will be buggy when the condensed tree is too large.
+Please note that, we can speed up `UMAP` with `RRAPIDS` in more than 40-folds. But it's hard for `HDBSCAN`, because we will have various computational complexity with different data and different parameters. I offen get out of GPU memory if too many small clusters are wating for analyzing. Hence, the current best practices for large dataset (e.g., 40 million non-repeative editing sites) is to use `UMAP` to compute the corrdinates on the 2D plane, then process the projections to CPU version `HDBSCAN` for further clustering. We also notice that, soft-clustering strategy will be buggy when the condensed tree is too large.
 
 ## The interactive version
 
-We also develop an interactive version of iMVP. This interactive one is built with `Plotly`. This version is suitable for quick and flexible analysis with low to middle (up to 100K) sites. The detail of the interactive version please see our document.
+The interactive version of iMVP is here ().
 
 ### Credits
 
 - The idea, major codes, and notebooks are contributed by `Jianheng Liu` (https://orcid.org/0000-0003-0216-1951) at Rui Zhang's Lab (Jan, 2022).
-- The interactive version developed on Plotly is contributed `Jing Yao` at Rui Zhang's lab (Jan, 2022).
+- The interactive version is contributed `Jing Yao` at Rui Zhang's lab (Jan, 2022).
 
 ### Contact
 
-For any bugs, please post them in `Issues`. You can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
+For any bugs, please post them in `Issues`. 
+
+For the issues about iMVP framework, you can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
+
+For the issues about the interactive interface (bugs, feature requests, and etc.), please contact `Jing Yao`.
 
 ### Citation
 
