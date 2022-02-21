@@ -2,17 +2,25 @@
 
 Are you curious about what's the picture for?
 
-<img src=https://user-images.githubusercontent.com/20188476/150387619-6ca84c54-40e3-4048-a392-c2857e3b1669.png width=100% />
+<img src=https://user-images.githubusercontent.com/20188476/154903099-0025fe65-e04e-44b7-aea2-d1fc0f8323bc.png width=60% />
 
-This is amazing picture is from the UMAP projection of the 21-nt sequences of **999,240** human A-to-I RNA editing sites (non-Alu repeats) in REDIportal! Each pixel here represents a set of similar sequences, and brighter pixel means higher density of sites. With this picture, we can intuitively learn what kinds of k-mers (21-mers here) are included and enriched in such huge amount of RNA editing events. This is never been done before.
+This amazing picture is from the UMAP projection of the 21-nt sequences of **999,240** human A-to-I RNA editing sites (non-Alu repeats) in REDIportal! Each pixel here represents a set of similar sequences, and brightness of the pixels represent the density of sites. With this picture, we can intuitively learn what kinds of k-mers (21-mers here) are included and enriched in such huge amount of RNA editing events. This is never been done before.
 
 ## Introduction
 
-**interactive Motif analysis by Visualization accelerated Perception (iMVP)** is a strategy inspired by the commonly used single cell analysis strategy of dimensional reduction followed by clustering. Different from the digital counts in single cell analysis, we here use the RNA sequence (and/or structure) as an input. Here, we firstly transform RNA sequences into a one-hot format; then these transformed sequences were projected to a 2D plane with UMAP, which can not only gather the similar sequences together, but also maintain the relationships between each other (compared with t-SNE); the dimensional reduced data were further clustered by density, with the super-efficient algorithm HDBSCAN, to highlight the enriched sequences.
+**interactive epitranscriptomic Motif Visualization and Sub-type Partitioning (iMVP)** is a strategy inspired by the commonly used single cell analysis strategy of dimensional reduction followed by clustering. Different from the digital counts in single cell analysis, we here use the RNA sequence (and/or structure) as an input. Here, we firstly transform RNA sequences into a one-hot format; then these transformed sequences were projected to a 2D plane with UMAP, which can not only gather the similar sequences together, but also maintain the relationships between each other (compared with t-SNE); the dimensional reduced data were further clustered by density, with the super-efficient algorithm HDBSCAN, to highlight the enriched sequences.
 
-Compared with canonical analysis, such as using MEME to scan for motifs in specific lengths of windows, this strategy works much faster, especially with large dataset (>10000 sites). Meanwhile, visulization itself can enable you to notice the distribution of noise, and perceive abnormal clusters even they are in low amount.
+Compared with canonical motif discovery strategies, such as MEME (statistics driven), iMVP no longer relays on the given parameters of window lengths, p-value cutoff, and etc. It is more intuitive for motif finding and more sensitive for minor motifs, making the motif finding process transparent. More importantly, we are now able to analyze modification sites in a extremely huge number. For example, the largest dataset we analyzed is the human A-to-I editing records with >15,000,000 sites in >5,000,000 21-mers. We finished the analysis with a single RTX2080Ti GPU within 1 hour, which is impossible for any other motif finders.
 
-A detailed document can be found in link readthedocs.io
+A detailed document can be found in link readthedocs.io. (Coming soon).
+
+![iMVP workflow](https://user-images.githubusercontent.com/20188476/154902995-17380c64-5685-4bcd-b587-f6f1fd27b0d2.jpg)
+
+## Best practices
+
+iMVP is currently not a single package. We provide two ways to apply iMVP in your analysis:
+- For new users not experienced in Python, we suggest you to use our interactive interface for quick analysis.
+- For advanced users, we suggest you to follow our `Notebooks` (`HeLa_Noc.ipynb` and `Human_dev.ipynb`) to learn the details of iMVP. 
 
 ## Contents 
 - Requirement
