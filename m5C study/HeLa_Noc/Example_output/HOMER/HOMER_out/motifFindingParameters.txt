@@ -1,0 +1,1 @@
+cmd = merged.dna.fa fasta ./HOMER_out2 -bits -rna
