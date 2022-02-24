@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Towards huge datasets &mdash; iMVP-utils 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Limitations" href="limitations.html" />
+    <link rel="prev" title="Unsupervised Clustering algorithms" href="HDBSCAN.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> iMVP-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beginners.html">For beginners</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_users.html">For advanced users</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="UMAP.html">Dimension Reduction Algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HDBSCAN.html">Unsupervised Clustering algorithms</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Towards huge datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configure-an-environment">Configure an environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-rapids">Install RAPIDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dance-with-jupyter-lab">Dance with Jupyter-lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#benchmarking">Benchmarking</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebook indexes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">iMVP-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Towards huge datasets</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/GPU_accerleration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="towards-huge-datasets">
+<h1>Towards huge datasets<a class="headerlink" href="#towards-huge-datasets" title="Permalink to this headline"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">RAPIDS</span></code> library from NVIDIA provides us the chance to accerlerate iMVP to an incredible level. The following guides will help you build it form the bottom. You need some patience before enjoying the high speed.</p>
+<section id="configure-an-environment">
+<h2>Configure an environment<a class="headerlink" href="#configure-an-environment" title="Permalink to this headline"></a></h2>
+<p>Firstly, you should have a Linux system with a GPU supported by <code class="docutils literal notranslate"><span class="pre">RAPIDS</span></code>. If you have little knowledge about how to use GPU, you can check it step by step.</p>
+<p>Firstly, check if you have installed the dependencies for your GPU (i.e., <code class="docutils literal notranslate"><span class="pre">CUDA</span></code> and <code class="docutils literal notranslate"><span class="pre">cudnn</span></code>), type <code class="docutils literal notranslate"><span class="pre">nvidi-smi</span></code> in your shell:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>nvidi-smi
+</pre></div>
+</div>
+<p>If you have nvidi toolkit installed, you will see something like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Tue Feb <span class="m">22</span> <span class="m">19</span>:24:16 <span class="m">2022</span>
++-----------------------------------------------------------------------------+
+<span class="p">|</span> NVIDIA-SMI <span class="m">495</span>.29.05    Driver Version: <span class="m">495</span>.29.05    CUDA Version: <span class="m">11</span>.5     <span class="p">|</span>
+<span class="p">|</span>-------------------------------+----------------------+----------------------+
+<span class="p">|</span> GPU  Name        Persistence-M<span class="p">|</span> Bus-Id        Disp.A <span class="p">|</span> Volatile Uncorr. ECC <span class="p">|</span>
+<span class="p">|</span> Fan  Temp  Perf  Pwr:Usage/Cap<span class="p">|</span>         Memory-Usage <span class="p">|</span> GPU-Util  Compute M. <span class="p">|</span>
+<span class="p">|</span>                               <span class="p">|</span>                      <span class="p">|</span>               MIG M. <span class="p">|</span>
+<span class="p">|</span><span class="o">===============================</span>+<span class="o">======================</span>+<span class="o">======================</span><span class="p">|</span>
+<span class="p">|</span>   <span class="m">0</span>  NVIDIA GeForce ...  Off  <span class="p">|</span> <span class="m">00000000</span>:02:00.0 Off <span class="p">|</span>                  N/A <span class="p">|</span>
+<span class="p">|</span> <span class="m">27</span>%   30C    P8     2W / 260W <span class="p">|</span>     51MiB / 11018MiB <span class="p">|</span>      <span class="m">0</span>%      Default <span class="p">|</span>
+<span class="p">|</span>                               <span class="p">|</span>                      <span class="p">|</span>                  N/A <span class="p">|</span>
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+<span class="p">|</span> Processes:                                                                  <span class="p">|</span>
+<span class="p">|</span>  GPU   GI   CI        PID   Type   Process name                  GPU Memory <span class="p">|</span>
+<span class="p">|</span>        ID   ID                                                   Usage      <span class="p">|</span>
+<span class="p">|</span><span class="o">=============================================================================</span><span class="p">|</span>
+<span class="p">|</span>    <span class="m">0</span>   N/A  N/A     <span class="m">16111</span>      G   /usr/lib/xorg/Xorg                 49MiB <span class="p">|</span>
++-----------------------------------------------------------------------------+
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">Driver</span> <span class="pre">Version:</span> <span class="pre">495.29.05</span></code> is the version of your GPU driver, and <code class="docutils literal notranslate"><span class="pre">CUDA</span> <span class="pre">Version:</span> <span class="pre">11.5</span></code> is the version of <code class="docutils literal notranslate"><span class="pre">CUDA</span></code>. If they are not matched with <code class="docutils literal notranslate"><span class="pre">RAPIDS</span></code>, please visit <a class="reference external" href="https://developer.nvidia.com/cuda-toolkit">https://developer.nvidia.com/cuda-toolkit</a> for more information, or you can use the application manager of your system (e.g., <code class="docutils literal notranslate"><span class="pre">apt</span></code> of Ubuntu) to install one.</p>
+<p>The you should check if <code class="docutils literal notranslate"><span class="pre">cudnn</span></code> is installed. The libraries should be found in the directory of <code class="docutils literal notranslate"><span class="pre">CUDA</span></code>, for example:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ls /usr/local/cuda-11.5/lib64/libcudnn*
+</pre></div>
+</div>
+<p>If you don’t have <code class="docutils literal notranslate"><span class="pre">cudnn</span></code>, please visit <a class="reference external" href="https://developer.nvidia.com/cudnn">https://developer.nvidia.com/cudnn</a> for more information.</p>
+</section>
+<section id="install-rapids">
+<h2>Install RAPIDS<a class="headerlink" href="#install-rapids" title="Permalink to this headline"></a></h2>
+<img alt="_images/RAPDIS.png" class="align-center" src="_images/RAPDIS.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now you can install RAPIDS. Click <code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RELEASE</span></code> on <a class="reference external" href="https://rapids.ai/start.html">https://rapids.ai/start.html</a>. Then you will found a release selector for <code class="docutils literal notranslate"><span class="pre">RAPIDS</span></code>. Here, we suggest you to run with docker. In our hands: <code class="docutils literal notranslate"><span class="pre">Docker</span> <span class="pre">+</span> <span class="pre">Examples</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Stable</span> <span class="pre">(22.02)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ubuntu</span> <span class="pre">18.04</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">CUDA</span> <span class="pre">11.5</span></code>. Then run the command lines given.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you don’t have <code class="docutils literal notranslate"><span class="pre">Docker</span></code>, please install it first (<a class="reference external" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a>).</p>
+</div>
+</section>
+<section id="dance-with-jupyter-lab">
+<h2>Dance with Jupyter-lab<a class="headerlink" href="#dance-with-jupyter-lab" title="Permalink to this headline"></a></h2>
+<p>We assumed you still survive. Here are some example codes for you to run <code class="docutils literal notranslate"><span class="pre">Jupyter-lab</span></code> with <code class="docutils literal notranslate"><span class="pre">RAPIDS</span></code>.</p>
+<p>Here, we want to map our local folder, for example, <code class="docutils literal notranslate"><span class="pre">docker_files</span></code> to the <code class="docutils literal notranslate"><span class="pre">container</span></code>.</p>
+<p>You can run the command lines:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>docker run -v /path/to/docker_files:/rapids/notebooks/docker_files -it --gpus all -p <span class="m">8888</span>:8888 -p <span class="m">6666</span>:6666 -p <span class="m">8786</span>:8786 rapidsai/rapidsai-core:21.12-cuda11.5-runtime-ubuntu18.04-py3.8
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">/path/to/docker_files:/rapids/docker_files</span></code> is two paths splited by the <code class="docutils literal notranslate"><span class="pre">:</span></code>. <code class="docutils literal notranslate"><span class="pre">/path/to/docker_files</span></code> is the path we want to share with the container. And <code class="docutils literal notranslate"><span class="pre">/rapids/notebooks/docker_files</span></code> is the mapped directory you have in the container. <code class="docutils literal notranslate"><span class="pre">-it</span></code> is the parameter allow you to enter the container like a shell. <code class="docutils literal notranslate"><span class="pre">--gpus</span> <span class="pre">all</span></code> allows the container to use your GPU (might need some dependencies, see <a class="reference external" href="https://developer.nvidia.com/blog/nvidia-docker-gpu-server-application-deployment-made-easy/">https://developer.nvidia.com/blog/nvidia-docker-gpu-server-application-deployment-made-easy/</a>). <code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">8888:8888</span> <span class="pre">-p</span> <span class="pre">6666:6666</span> <span class="pre">-p</span> <span class="pre">8786:8786</span></code> are the ports to map. <code class="docutils literal notranslate"><span class="pre">rapidsai/rapidsai-core:21.12-cuda11.5-runtime-ubuntu18.04-py3.8</span></code> is the name of the container you installed.</p>
+<p>Then you will enter a shell like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.download.nvidia.com/licenses/NVIDIA_Deep_Learning_Container_License.pdf
+
+A JupyterLab server has been started!
+To access it, visit http://localhost:8888 on your host machine.
+Ensure the following arguments were added to <span class="s2">&quot;docker run&quot;</span> to expose the JupyterLab server to your host machine:
+    -p <span class="m">8888</span>:8888 -p <span class="m">8787</span>:8787 -p <span class="m">8786</span>:8786
+Make <span class="nb">local</span> folders visible by <span class="nb">bind</span> mounting to /rapids/notebooks/host
+<span class="o">(</span>rapids<span class="o">)</span> root@dea9015824c8:/rapids/notebooks#
+</pre></div>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>rapids<span class="o">)</span> root@dea9015824c8:/rapids/notebooks#ll
+drwxrwxrwx  <span class="m">1</span> root root   <span class="m">4096</span> Feb <span class="m">22</span> <span class="m">11</span>:49 ./
+drwxrwxrwx  <span class="m">1</span> root root   <span class="m">4096</span> Dec <span class="m">17</span> <span class="m">20</span>:51 ../
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">38</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cudf -&gt; repos/cudf/docs/cudf/source/user_guide/
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">23</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cugraph -&gt; repos/cugraph/notebooks/
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">20</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cuml -&gt; repos/cuml/notebooks/
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">24</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cusignal -&gt; repos/cusignal/notebooks/
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">15</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cuspatial -&gt; repos/cuspatial/
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">25</span> Dec <span class="m">17</span> <span class="m">20</span>:51 cuxfilter -&gt; repos/cuxfilter/notebooks/
+drwxr-xr-x  <span class="m">2</span> root root   <span class="m">4096</span> Feb <span class="m">22</span> <span class="m">11</span>:44 docker_files/
+drwxrwxrwx  <span class="m">8</span> root root   <span class="m">4096</span> Dec <span class="m">17</span> <span class="m">20</span>:51 .git/
+-rw-rw-rw-  <span class="m">1</span> root root     <span class="m">19</span> Dec <span class="m">17</span> <span class="m">20</span>:51 .gitignore
+-rw-rw-rw-  <span class="m">1</span> root root    <span class="m">903</span> Dec <span class="m">17</span> <span class="m">20</span>:51 .gitmodules
+-rw-rw-rw-  <span class="m">1</span> root root  <span class="m">11348</span> Dec <span class="m">17</span> <span class="m">20</span>:51 LICENSE
+-rw-rw-r--  <span class="m">1</span> root root <span class="m">144823</span> Dec <span class="m">17</span> <span class="m">20</span>:43 NVIDIA_Deep_Learning_Container_License.pdf
+-rw-rw-rw-  <span class="m">1</span> root root   <span class="m">1313</span> Dec <span class="m">17</span> <span class="m">20</span>:51 README.md
+drwxrwxrwx <span class="m">10</span> root root   <span class="m">4096</span> Dec <span class="m">17</span> <span class="m">20</span>:51 repos/
+drwxrwxrwx  <span class="m">2</span> root root   <span class="m">4096</span> Dec <span class="m">17</span> <span class="m">20</span>:51 test/
+-rwxrwxrwx  <span class="m">1</span> root root     <span class="m">88</span> Dec <span class="m">17</span> <span class="m">20</span>:51 update.sh*
+lrwxrwxrwx  <span class="m">1</span> root root     <span class="m">23</span> Dec <span class="m">17</span> <span class="m">20</span>:51 xgboost -&gt; repos/xgboost/notebooks/
+</pre></div>
+</div>
+<p>To run the <code class="docutils literal notranslate"><span class="pre">jupyter-lab</span></code>, please type</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash /rapids/utils/start-jupyter.sh
+</pre></div>
+</div>
+<p>To enter the notebook, you can type <code class="docutils literal notranslate"><span class="pre">xxx.xxx.xxx.xxx:8888</span></code> in your browser, where <code class="docutils literal notranslate"><span class="pre">xxx.xxx.xxx.xxx</span></code> is the IP address of your sever.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">-a</span></code> to check you IP in Ubuntu.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can install <code class="docutils literal notranslate"><span class="pre">iMVP_utils</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code> in the container, but we suggest you to copy the codes from our notebooks directly. The interactive interface of iMVP is not supported in GPU accerleration.</p>
+</div>
+<p>Now, enjoy cuML!</p>
+<img alt="_images/JupyterLab.png" class="align-center" src="_images/JupyterLab.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Some packages, for example, the CPU version of HDBSCAN are not installed in the container. You should run the following command lines to enable them.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The files generated by the container belongs to root user. You require a permission to delete them outside the container.</p>
+</div>
+<p>Example:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>apt-get update
+apt-get install -y gcc
+pip install hdbscan
+</pre></div>
+</div>
+<p>Something else:</p>
+<p>To exit the shell, please type <code class="docutils literal notranslate"><span class="pre">exit</span></code> or use <code class="docutils literal notranslate"><span class="pre">CTRL+D</span></code>. If you leave the container by accidence but it still alive, you can first type <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span></code> to find the id of the container. If you want to stop it, use <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">stop</span> <span class="pre">&lt;id&gt;</span></code> where <code class="docutils literal notranslate"><span class="pre">&lt;id&gt;</span></code> should be <code class="docutils literal notranslate"><span class="pre">dea9015824c8</span></code> in this example. If you want to re-enter the container, please type <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">attach</span> <span class="pre">&lt;id&gt;</span></code>.</p>
+</section>
+<section id="benchmarking">
+<h2>Benchmarking<a class="headerlink" href="#benchmarking" title="Permalink to this headline"></a></h2>
+<figure class="align-center">
+<img alt="_images/benchmarking_GPU.png" src="_images/benchmarking_GPU.png" />
+</figure>
+<p>Here we can find that, when runs with <code class="docutils literal notranslate"><span class="pre">init=&quot;random&quot;,</span> <span class="pre">random_state=42,</span> <span class="pre">min_dist=0.01,</span> <span class="pre">n_neighbors=20</span></code> UMAP has a great improvement with <code class="docutils literal notranslate"><span class="pre">cuML</span></code>. But little improvement was found with <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code> (parameters <code class="docutils literal notranslate"><span class="pre">min_cluster_size=100,</span> <span class="pre">min_samples=100</span></code>).</p>
+<p>This difference might come from the algorithm themselves. <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code> might be much heavier in computing the distances between data points, and hence runs slower with a GPU. We also don’t recommand using <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code> with GPU, because <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code> might consume huge memory above the ceil of the device, however, we might have much more memory in a CPU environment. Moreover, we now lacks some key functions in RAPIDS’s <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code> implement, e.g., soft clustering and condensed tree drawing. So the best practices should be treate the data with GPU-based <code class="docutils literal notranslate"><span class="pre">UMAP</span></code> first, then turn to CPU-based <code class="docutils literal notranslate"><span class="pre">HDBSCAN</span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="HDBSCAN.html" class="btn btn-neutral float-left" title="Unsupervised Clustering algorithms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="limitations.html" class="btn btn-neutral float-right" title="Limitations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jianheng Liu, Jing Yao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

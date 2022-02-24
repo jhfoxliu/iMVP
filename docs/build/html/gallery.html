@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery &mdash; iMVP-utils 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api.html" />
+    <link rel="prev" title="Notebook indexes" href="notebooks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> iMVP-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beginners.html">For beginners</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_users.html">For advanced users</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="UMAP.html">Dimension Reduction Algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HDBSCAN.html">Unsupervised Clustering algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GPU_accerleration.html">Towards huge datasets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebook indexes</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gallery</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#human-a-to-i-editings-in-rediportal">Human A-to-I editings in REDIportal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#million-sites">1500 million sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#million-sites-by-groups">1500 million sites (by groups)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alu-sites">Alu sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#non-alu-repeats">non-Alu repeats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#non-repeative">non-repeative</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#m5c-landscapes">m5C landscapes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#noc-treated-hela">Noc-treated HeLa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#human-oocytes">Human oocytes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developmental-stages-one-by-one">Developmental stages (one-by-one)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developmental-stages-together">Developmental stages (together)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#m6a-methods-comparison">m6A methods comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xpore-data">xPore data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#before-phase-matching">Before phase matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#after-phase-matching">After phase matching</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rna-seq-variants">RNA-seq variants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-bases">A bases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#u-bases">U bases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-bases">C bases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-bases">G bases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">iMVP-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Gallery</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/gallery.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gallery">
+<h1>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline"></a></h1>
+<section id="human-a-to-i-editings-in-rediportal">
+<h2>Human A-to-I editings in REDIportal<a class="headerlink" href="#human-a-to-i-editings-in-rediportal" title="Permalink to this headline"></a></h2>
+<section id="million-sites">
+<h3>1500 million sites<a class="headerlink" href="#million-sites" title="Permalink to this headline"></a></h3>
+<img alt="_images/all_editing_kmers_vs_all.png" class="align-center" src="_images/all_editing_kmers_vs_all.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="million-sites-by-groups">
+<h3>1500 million sites (by groups)<a class="headerlink" href="#million-sites-by-groups" title="Permalink to this headline"></a></h3>
+<img alt="_images/all_editing.png" class="align-center" src="_images/all_editing.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="alu-sites">
+<h3>Alu sites<a class="headerlink" href="#alu-sites" title="Permalink to this headline"></a></h3>
+<img alt="_images/alu.png" class="align-center" src="_images/alu.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="non-alu-repeats">
+<h3>non-Alu repeats<a class="headerlink" href="#non-alu-repeats" title="Permalink to this headline"></a></h3>
+<img alt="_images/nonAlu_repeats.png" class="align-center" src="_images/nonAlu_repeats.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="non-repeative">
+<h3>non-repeative<a class="headerlink" href="#non-repeative" title="Permalink to this headline"></a></h3>
+<img alt="_images/nonrepetitive.png" class="align-center" src="_images/nonrepetitive.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="m5c-landscapes">
+<h2>m5C landscapes<a class="headerlink" href="#m5c-landscapes" title="Permalink to this headline"></a></h2>
+<section id="noc-treated-hela">
+<h3>Noc-treated HeLa<a class="headerlink" href="#noc-treated-hela" title="Permalink to this headline"></a></h3>
+<img alt="_images/HeLa_Noc.png" class="align-center" src="_images/HeLa_Noc.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="human-oocytes">
+<h3>Human oocytes<a class="headerlink" href="#human-oocytes" title="Permalink to this headline"></a></h3>
+<img alt="_images/human_oocyte.png" class="align-center" src="_images/human_oocyte.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="developmental-stages-one-by-one">
+<h3>Developmental stages (one-by-one)<a class="headerlink" href="#developmental-stages-one-by-one" title="Permalink to this headline"></a></h3>
+<img alt="_images/developmental.png" class="align-center" src="_images/developmental.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="developmental-stages-together">
+<h3>Developmental stages (together)<a class="headerlink" href="#developmental-stages-together" title="Permalink to this headline"></a></h3>
+<img alt="_images/developmental_together.png" class="align-center" src="_images/developmental_together.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="m6a-methods-comparison">
+<h2>m6A methods comparison<a class="headerlink" href="#m6a-methods-comparison" title="Permalink to this headline"></a></h2>
+<img alt="_images/m6A_methods.png" class="align-center" src="_images/m6A_methods.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="xpore-data">
+<h2>xPore data<a class="headerlink" href="#xpore-data" title="Permalink to this headline"></a></h2>
+<section id="before-phase-matching">
+<h3>Before phase matching<a class="headerlink" href="#before-phase-matching" title="Permalink to this headline"></a></h3>
+<img alt="_images/xPore_init.png" class="align-center" src="_images/xPore_init.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="after-phase-matching">
+<h3>After phase matching<a class="headerlink" href="#after-phase-matching" title="Permalink to this headline"></a></h3>
+<img alt="_images/xPore_after.png" class="align-center" src="_images/xPore_after.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="rna-seq-variants">
+<h2>RNA-seq variants<a class="headerlink" href="#rna-seq-variants" title="Permalink to this headline"></a></h2>
+<section id="a-bases">
+<h3>A bases<a class="headerlink" href="#a-bases" title="Permalink to this headline"></a></h3>
+<img alt="_images/RNA_seq_var_A.png" class="align-center" src="_images/RNA_seq_var_A.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="u-bases">
+<h3>U bases<a class="headerlink" href="#u-bases" title="Permalink to this headline"></a></h3>
+<img alt="_images/RNA_seq_var_U.png" class="align-center" src="_images/RNA_seq_var_U.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="c-bases">
+<h3>C bases<a class="headerlink" href="#c-bases" title="Permalink to this headline"></a></h3>
+<img alt="_images/RNA_seq_var_C.png" class="align-center" src="_images/RNA_seq_var_C.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="g-bases">
+<h3>G bases<a class="headerlink" href="#g-bases" title="Permalink to this headline"></a></h3>
+<img alt="_images/RNA_seq_var_G.png" class="align-center" src="_images/RNA_seq_var_G.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="notebooks.html" class="btn btn-neutral float-left" title="Notebook indexes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jianheng Liu, Jing Yao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

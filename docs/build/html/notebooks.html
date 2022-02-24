@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notebook indexes &mdash; iMVP-utils 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gallery" href="gallery.html" />
+    <link rel="prev" title="Limitations" href="limitations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> iMVP-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beginners.html">For beginners</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_users.html">For advanced users</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="UMAP.html">Dimension Reduction Algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HDBSCAN.html">Unsupervised Clustering algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GPU_accerleration.html">Towards huge datasets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Notebook indexes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#benchmarking">Benchmarking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-reduction">Dimension reduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unsupervised-clustering">Unsupervised clustering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpu-vs-cpu">GPU vs CPU</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#standard-analysis">Standard analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#m5c-in-noc-treated-hela">m5C in Noc-treated HeLa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#m5c-in-human-oocytes">m5C in human oocytes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#multi-samples-comparison">Multi-samples comparison</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#m5c-in-developmental-stages">m5C in developmental stages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#m6a-method-comparison">m6A method comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pseudou-method-comparison-not-in-article">PseudoU method comparison (not in article)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nanopre">Nanopre</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xpore-analysis">xPore analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rna-seq-variants">RNA-seq variants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modtect">ModTect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#huge-dataset">Huge dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#human-rna-editing-landscape">Human RNA editing landscape</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">iMVP-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Notebook indexes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/notebooks.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="notebook-indexes">
+<h1>Notebook indexes<a class="headerlink" href="#notebook-indexes" title="Permalink to this headline"></a></h1>
+<section id="benchmarking">
+<h2>Benchmarking<a class="headerlink" href="#benchmarking" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="dimension-reduction">
+<h3>Dimension reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline"></a></h3>
+</section>
+<section id="unsupervised-clustering">
+<h3>Unsupervised clustering<a class="headerlink" href="#unsupervised-clustering" title="Permalink to this headline"></a></h3>
+</section>
+<section id="gpu-vs-cpu">
+<h3>GPU vs CPU<a class="headerlink" href="#gpu-vs-cpu" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/Benchmarking">https://github.com/jhfoxliu/iMVP/tree/main/Benchmarking</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="standard-analysis">
+<h2>Standard analysis<a class="headerlink" href="#standard-analysis" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="m5c-in-noc-treated-hela">
+<h3>m5C in Noc-treated HeLa<a class="headerlink" href="#m5c-in-noc-treated-hela" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/HeLa_Noc">https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/HeLa_Noc</a></p>
+</section>
+<section id="m5c-in-human-oocytes">
+<h3>m5C in human oocytes<a class="headerlink" href="#m5c-in-human-oocytes" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/Human_oocyte">https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/Human_oocyte</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="multi-samples-comparison">
+<h2>Multi-samples comparison<a class="headerlink" href="#multi-samples-comparison" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="m5c-in-developmental-stages">
+<h3>m5C in developmental stages<a class="headerlink" href="#m5c-in-developmental-stages" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/Species_development">https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/Species_development</a></p>
+</section>
+<section id="m6a-method-comparison">
+<h3>m6A method comparison<a class="headerlink" href="#m6a-method-comparison" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/m6A%20study">https://github.com/jhfoxliu/iMVP/tree/main/m6A%20study</a></p>
+</section>
+<section id="pseudou-method-comparison-not-in-article">
+<h3>PseudoU method comparison (not in article)<a class="headerlink" href="#pseudou-method-comparison-not-in-article" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/pseudouridine%20study">https://github.com/jhfoxliu/iMVP/tree/main/pseudouridine%20study</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="nanopre">
+<h2>Nanopre<a class="headerlink" href="#nanopre" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="xpore-analysis">
+<h3>xPore analysis<a class="headerlink" href="#xpore-analysis" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/Nanopore">https://github.com/jhfoxliu/iMVP/tree/main/Nanopore</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="rna-seq-variants">
+<h2>RNA-seq variants<a class="headerlink" href="#rna-seq-variants" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="modtect">
+<h3>ModTect<a class="headerlink" href="#modtect" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/RNA-seq%20variants">https://github.com/jhfoxliu/iMVP/tree/main/RNA-seq%20variants</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="huge-dataset">
+<h2>Huge dataset<a class="headerlink" href="#huge-dataset" title="Permalink to this headline"></a></h2>
+<hr class="docutils" />
+<section id="human-rna-editing-landscape">
+<h3>Human RNA editing landscape<a class="headerlink" href="#human-rna-editing-landscape" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://github.com/jhfoxliu/iMVP/tree/main/RAPIDS">https://github.com/jhfoxliu/iMVP/tree/main/RAPIDS</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="limitations.html" class="btn btn-neutral float-left" title="Limitations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gallery.html" class="btn btn-neutral float-right" title="Gallery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jianheng Liu, Jing Yao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

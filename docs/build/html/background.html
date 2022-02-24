@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background &mdash; iMVP-utils 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="install.html" />
+    <link rel="prev" title="The iMVP-utils" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> iMVP-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Background</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beginners.html">For beginners</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_users.html">For advanced users</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="UMAP.html">Dimension Reduction Algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HDBSCAN.html">Unsupervised Clustering algorithms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GPU_accerleration.html">Towards huge datasets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebook indexes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">iMVP-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Background</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/background.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="background">
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this headline"></a></h1>
+<p>If you were assigned to identify the enriched motifs from a set of sequences, what is your first idea?</p>
+<ul class="simple">
+<li><p>Statistical based methods? For example, compute the entropies of sequence preferences from the sliding windows?</p></li>
+<li><p>Graph-based methods? By computing the connections between the sequences?</p></li>
+<li><p>Deep-learning based methods? Just hands off and wait for the best fitting?</p></li>
+</ul>
+<p>And what will you do if you were assigned to analyze <strong>1 million sequences</strong>, instead of hundreds? There should be a solution for such a scenario.</p>
+<p>Just jump out of the box. Let’s repeat the essence of our question: how can we isolate <strong>a set of similar things</strong> from a crowd of sequences. Wait… do you find something is similar? For example, the popular <strong>single cell analysis</strong>, that we project the thousands to millions of cells in a (N, M) matrix onto a 2D plane, where N is the number of cells and M is the number of gene expression values, for further analysis.</p>
+<p>Such a method can also be applied on motif discovery! Here we can firstly use one-hot encoding to transform the sequences into vectors (ATCG to [1,0,0,0,…]). Then we can use a dimension reduction algorithm to seprate the sequences as much as possible on the 2D plane. And finally, we can use a Unsupervised clustering method to identify the similar sequences into clusters.</p>
+<p>This is the idea for <strong>interactive epitranscriptomic Motif Visualization and Sub-type Partitioning (iMVP)</strong>. Here, we chose two powerful tools, UMAP and HDBSCAN, for the embedding and clustering steps. Such a combination is highly reliable in both speed, sensibility, fliexibility, and most importanly scalability. We now extend our ability in motif analysis from thousands to millions, when GPU accerleration is available.</p>
+<p>In this documenet, we provide various examples for users at any levels and for any purposes:</p>
+<ul class="simple">
+<li><p>For beginners, we provide an interactive interface of iMVP, with which one can analyze the motifs - what you see is what you get.</p></li>
+<li><p>For advanced users, we prepared Notebooks for analysis for different propuses.</p></li>
+</ul>
+<p>Wish you enjoy this document and get what you want from your data :)</p>
+<img alt="_images/iMVP_workflow.png" class="align-center" src="_images/iMVP_workflow.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="The iMVP-utils" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jianheng Liu, Jing Yao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
