@@ -12,7 +12,7 @@ This amazing picture is from the UMAP projection of the 21-nt sequences of **999
 
 Compared with canonical motif discovery strategies, such as MEME (statistics driven), iMVP no longer relays on the given parameters of window lengths, p-value cutoff, and etc. It is more intuitive for motif finding and more sensitive for minor motifs, making the motif finding process transparent. More importantly, we are now able to analyze modification sites in a extremely huge number. For example, the largest dataset we analyzed is the human A-to-I editing records with >15,000,000 sites in >5,000,000 21-mers. We finished the analysis with a single RTX2080Ti GPU within 1 hour, which is impossible for any other motif finders.
 
-A detailed document can be found in link readthedocs.io. (Coming soon).
+A detailed document can be found here: https://imvp.readthedocs.io/en/latest/.
 
 ![iMVP workflow](https://user-images.githubusercontent.com/20188476/154902995-17380c64-5685-4bcd-b587-f6f1fd27b0d2.jpg)
 
