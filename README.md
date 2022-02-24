@@ -34,7 +34,9 @@ iMVP is currently not a single package. We provide two ways to apply iMVP in you
 
 We use `Python 3` in iMVP. We list the packages required in each notebook. In summary, we require `pandas`, `numpy`, `umap-learn`, `hdbscan`, `scipy`, `matplotlib`, and `seaborn` for most of the usages. For some cases, `scikit-learn` should be isntalled for benchmarking. We recommend you to install `Weblogo` and `MEME` for further analysis of the clusters.
 
-For `Linux` (and probably for `MacOS`), all of the packages and softwares are available on Pypi (with `pip`) or on the official websites.
+For `Linux` (and probably for `MacOS`), all of the packages and softwares are available on Pypi (with `pip`) or on the official websites:
+
+`pip install iMVP-utils`
 
 We don't recommend running iMVP with `Windows`. Please note that, `hdbscan` from Pypi is not compatible, instead, you can get an wheels (https://www.lfd.uci.edu/~gohlke/pythonlibs/) with some troubles with multi-threads (please modify `core_n_jobs` if you get some troubles). In addition, `Weblogo` and `MEME` are not available on Windows, too. 
 
@@ -48,7 +50,7 @@ Please note that, we can speed up `UMAP` with `RRAPIDS` in more than 40-folds. B
 
 ## The interactive version
 
-The interactive version of iMVP is here ().
+Please use `iMVP_viewer.py` to access the interactive interface.
 
 
 ## Credits
