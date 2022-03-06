@@ -58,6 +58,7 @@ Please use `iMVP_viewer.py` to access the interactive interface.
 - The idea, major codes, and notebooks are contributed by `Jianheng Liu` (https://orcid.org/0000-0003-0216-1951) at Rui Zhang's Lab (Jan, 2022).
 - The interactive version is contributed `Jing Yao` and `Jianheng Liu` at Rui Zhang's lab (Feb, 2022).
 
+## License (important!!)
 
 ## Contact
 
