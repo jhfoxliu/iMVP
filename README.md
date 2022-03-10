@@ -56,7 +56,7 @@ Please use `iMVP_viewer.py` to access the interactive interface.
 ## Credits
 
 - The idea, major codes, and notebooks are contributed by `Jianheng Liu` (https://orcid.org/0000-0003-0216-1951) at Rui Zhang's Lab (Jan, 2022).
-- The interactive version is contributed `Jing Yao` and `Jianheng Liu` at Rui Zhang's lab (Feb, 2022).
+- The interactive version is contributed `Jing Yao` (https://orcid.org/0000-0002-9654-1148) and `Jianheng Liu` at Rui Zhang's lab (Feb, 2022).
 
 ## License (important!!)
 
@@ -93,7 +93,7 @@ For any bugs, please post them in `Issues`.
 
 For the issues about iMVP framework, you can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
 
-For the issues about the interactive interface (bugs, feature requests, and etc.), please contact `Jing Yao`.
+For the issues about the interactive interface (bugs, feature requests, and etc.), please contact `Jing Yao` (yaoj39@mail2.sysu.edu.cn).
 
 
 ## Citation
