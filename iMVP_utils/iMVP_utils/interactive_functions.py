@@ -102,7 +102,7 @@ def cluster_HDBSCAN(df, parameters):
     df["Cluster"] = [i+1 if i > -1 else -1 for i in labels ]  # re-number lables to make it human-readable
 
     # check cluster number
-    # print(df.groupby("Cluster")["Cluster"].count())
+    print(df.groupby("Cluster")["Cluster"].count())
     return df
 
 
@@ -129,20 +129,9 @@ def run_cluster(fasta_df, path, parameters):
 
     df_UMAP = UMAP(onehot_input, fasta_df, parameters)
     df_HDBSCAN = cluster_HDBSCAN(df_UMAP, parameters)
-    # print(df_HDBSCAN)
+    print(df_HDBSCAN)
     df_HDBSCAN.to_csv("{path}/all_clusters.csv".format(path=path),index = None)
     
-    base_type = parameters["weblogo_base_type"]
-
-    with open("{path}/init.fa".format(path=path), "w") as init_fasta:
-        for idx, row in df_HDBSCAN.iterrows():
-            if base_type == "DNA":
-                seq_out = str(row["seq"]).upper().replace("U", "T")
-            elif base_type == "RNA":
-                seq_out = str(row["seq"]).upper().replace("T", "U")
-            else:
-                seq_out = str(row["seq"]).upper()
-            init_fasta.write(">{}\n{}\n".format(idx, seq_out))
     return df_HDBSCAN
 
 def draw_logo(infile, parameters):
@@ -162,7 +151,6 @@ def draw_logo(infile, parameters):
     
     data = open(infile)
     seqs = read_seq_data(data)
-
     logodata = LogoData.from_seqs(seqs)
     logooptions = LogoOptions(
         unit_name = unit, # 'probability',
