@@ -19,7 +19,7 @@ if __name__ == "__main__":
     parser.add_argument('--output','-o', dest="output_path", type = str, default="./output/",help='The output directory. If not exist, will make the folder. Default="./output/"')
     parser.add_argument('--host', dest="host", type = str, default="127.0.0.1",help='The IP address of the app, default=127.0.0.1 (localhost)')
     parser.add_argument('--port', dest="port", type = int, default=8050,help='The port number that you want to dispaly the app.')
-    parser.add_argument('--version', '-v', action='version', version="0.2.1",help='Display version.')
+    parser.add_argument('--version', '-v', action='version', version="0.2.2",help='Display version.')
 
     options = parser.parse_args()
 

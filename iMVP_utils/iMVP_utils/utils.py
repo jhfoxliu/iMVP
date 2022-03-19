@@ -9,6 +9,10 @@ def load_sequences_from_fasta(fn):
     ----------
     fn: str
         The file to load.
+        
+    Returns
+    -------
+    pd.DataFrame
     """
     import pandas as pd
     from Bio import SeqIO

@@ -9,7 +9,7 @@ setup(
         "Bug Tracker": "https://github.com/jhfoxliu/issues",
     },
     description = 'Utils for interactive epitranscriptomic Motif Visualization and Sub-type Partitioning (iMVP).',
-    version = '0.2.1',
+    version = '0.2.2',
     packages = ['iMVP_utils'],
     license = "MIT",
     scripts=["iMVP_viewer.py"],
