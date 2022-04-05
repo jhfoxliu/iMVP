@@ -78,15 +78,6 @@ Developmental stages (together)
 
 |
 
-
-m6A methods comparison
-----------------------
-
-.. image:: ../Images/Gallery/m6A_methods.png
-   :align: center
-
-|
-
 xPore data
 ----------
 
