@@ -1,14 +1,14 @@
 Towards huge datasets
 =====================
 
-The ``RAPIDS`` library from NVIDIA provides us the chance to accerlerate iMVP to an incredible level. The following guides will help you build it form the bottom. You need some patience before enjoying the high speed.
+The ``RAPIDS`` library from NVIDIA provides us the chance to accelerate iMVP to an incredible level. The following guides will help you build it from scratch. You need some patience before enjoying the high speed.
 
 Configure an environment
 ------------------------
 
-Firstly, you should have a Linux system with a GPU supported by ``RAPIDS``. If you have little knowledge about how to use GPU, you can check it step by step.
+First, you should have a Linux system with a GPU supported by ``RAPIDS``. If you have little knowledge about how to use GPU, you can check it step by step.
 
-Firstly, check if you have installed the dependencies for your GPU (i.e., ``CUDA`` and ``cudnn``), type ``nvidi-smi`` in your shell:
+First, check if you have installed the dependencies for your GPU (i.e., ``CUDA`` and ``cudnn``), type ``nvidi-smi`` in your shell:
 
 .. code-block:: sh
 
@@ -41,7 +41,7 @@ If you have nvidi toolkit installed, you will see something like this:
 
 Here, ``Driver Version: 495.29.05`` is the version of your GPU driver, and ``CUDA Version: 11.5`` is the version of ``CUDA``. If they are not matched with ``RAPIDS``, please visit https://developer.nvidia.com/cuda-toolkit for more information, or you can use the application manager of your system (e.g., ``apt`` of Ubuntu) to install one.
 
-The you should check if ``cudnn`` is installed. The libraries should be found in the directory of ``CUDA``, for example:
+Then you should check if ``cudnn`` is installed. The libraries should be found in the directory of ``CUDA``, for example:
 
 .. code-block:: sh
 
@@ -66,7 +66,7 @@ Now you can install RAPIDS. Click ``SELECT RELEASE`` on https://rapids.ai/start.
 Dance with Jupyter-lab
 ----------------------
 
-We assumed you still survive. Here are some example codes for you to run ``Jupyter-lab`` with ``RAPIDS``.
+We assume you still survive. Here are some example codes for you to run ``Jupyter-lab`` with ``RAPIDS``.
 
 Here, we want to map our local folder, for example, ``docker_files`` to the ``container``.
 
