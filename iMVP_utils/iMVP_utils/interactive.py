@@ -585,14 +585,14 @@ def launch_backend(output_path="./output/"):
                         style = {'textAlign':'center'}), # , 'margin-left':'20%'
 
                 html.H3(
-                        "Version: 0.2.2; Contributed by Jing Yao, Jianheng Liu @ Zhang Lab (SYSU).",
+                        "Version: 0.2.3; Contributed by Jing Yao, Jianheng Liu @ Zhang Lab (SYSU).",
                         style = {'textAlign':'center'}), # , 'margin-left': '10%'
                 html.H3("Documents: https://readthedocs.org/iMVP/", style = {'textAlign':'center'}),
 
                 html.Div([
                     # html.Br(),
                     # html.Br(),
-                    html.Div("Tips #1: If you want to go back to this page, just refresh the parameters page."),
+                    html.Div("Tips #1: To go back to the parameters page, please refresh the page."),
                     html.Div("Tips #2: Use Ctrl+C in command lines to terminate the backend."),
                 ], style={"horizonal-align":"center", 'text-align':'center'}),
             ], style={"width":"1000px"}),
