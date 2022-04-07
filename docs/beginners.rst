@@ -4,16 +4,16 @@ For beginners
 The interactive interface
 -------------------------
 
-We designed an interactive interface (a viewer) for you if you are not famaliar to programing. Here is a small tutorial.
+We designed an interactive interface (a viewer) for you if you are not famaliar with programming. Here is a tutorial.
 
-Before using the viewer, please install ``iMVP-utils`` first (see :doc:`install`), then run with the script ``iMVP_viewer.py`` by typing it in your shell:
+Before using the viewer, please install ``iMVP-utils`` first (see :doc:`install`), then run the script ``iMVP_viewer.py`` by typing it in your shell:
 
 .. code-block:: sh
 
     iMVP_viewer.py
 
 
-this operation will open a backend of iMVP viewer, and you can visit the application via your browser. By default, please type ``127.0.0.1:8050`` in your URL box to access it.
+this operation will open a backend of the iMVP viewer, and you can visit the application via your browser. By default, please type ``127.0.0.1:8050`` in your URL box to access it.
 
 If you want to run the backend on your sever but work with it in another computer, you can assign a IP address for it:
 
@@ -23,7 +23,7 @@ If you want to run the backend on your sever but work with it in another compute
 
 here, ``xxx:xxx:xxx:xxx`` should be the IP address of the sever, for example ``123.123.123.123``. Then you can visit from the browser of another computer with ``xxx:xxx:xxx:xxx:8050``. Use ``--port`` option if you want to switch to another port.
 
-You will visit this page when you succeed to launch the application. You can drag your FASTA file to the upload box, or just click it to send your file to the sever. Then you should adjust the parameters on the right. When everything is ready, click "submit" to run ``iMVP``
+You will visit this page when you succeed in launching the application. You can drag your FASTA file to the upload box, or just click it to send your file to the sever. Then you should adjust the parameters on the right. When everything is ready, click "submit" to run ``iMVP``
 
 .. image:: ../Images/Guide/Guide_1.png
     :align: center
