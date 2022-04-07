@@ -6,14 +6,14 @@ Environment
 
 Most of the functions in ``iMVP-utils`` can be run on Linux, Windows, and MacOS. 
 
-Our interactive interface is not available on Windows because some application (e.g., ``Weblogo``) are not supported. For such a situtation, we suggest you to use ``WSL`` (https://docs.microsoft.com/en-us/windows/wsl/).
+Our interactive interface is not available on Windows because some applications (e.g., ``Weblogo``) are not supported. For such a situtation, we suggest you to use ``WSL`` (https://docs.microsoft.com/en-us/windows/wsl/).
 
 Dependencies
 ------------
 
 The workflow is supported by ``Python 3``.
 
-Tested/recommanded versions are indicated. In each notebook, we also highlight the required packages.
+Tested/recommended versions are indicated. In each notebook, we also highlight the required packages.
 
 Basic Requirements
 ^^^^^^^^^^^^^^^^^^
