@@ -1,7 +1,7 @@
 For advanced users
 ==================
 
-For advanced users, we suggest you to start with ``HeLa_Noc.ipynb``, ``Human_dev.ipynb``, and ``m6A_methods.ipynb``. The following sections describe solutions for some special scenarios.
+For advanced users, we suggest you to start with ``HeLa_Noc.ipynb`` and ``Human_dev.ipynb``. The following sections describe solutions for some special scenarios.
 
 Handling stubborn clusters
 --------------------------
@@ -9,9 +9,9 @@ If you find that the sequences in your data is hard to be separated. They are so
 
 * For the input, try to combine other features, like secondary structures with the sequences. Or try to use sequences longer or shorter than 21-mers.
 
-* For ``UMAP``, increase ``n_neighbors`` should help to some extents.
+* For ``UMAP``, increasing ``n_neighbors`` should help to some extents.
 
-* For ``HDBSCAN``, if you have been adjusting the ``min_samples`` and ``min_cluster_size`` paramters for a long time, you can also try ``cluster_selection_epsilon`` parameter. However, we suggest you to observe your ``condensed tree`` and determine the if it is valuable to continue.
+* For ``HDBSCAN``, if you have been adjusting the ``min_samples`` and ``min_cluster_size`` paramters, you can also try ``cluster_selection_epsilon`` parameter. However, we suggest you to observe your ``condensed tree`` and determine  if it is worth to continue.
 
 .. warning:: The k-mers of your sequences should always be a ultra small fraction in the k-mers space.
 
@@ -43,14 +43,14 @@ Phase matching
 --------------
 Owe to the position-sensitive feature of ``iMVP``, we can have some interesting application.
 
-In variant call from ``Nanopre`` RNA sequencing, an obvious problem is that the signal might not directly come from called base itself, but might come from its adjacent bases. Here, we call such phenomenon "phase mismatch". In past, we might try to assign the signal of the variant to a selected adjacent base with some conditions. Now, with ``iMVP``, we can have a more rational assignment because we now have the prior knowledge about the clusters. In our pratices, we firstly cluster the signals from ``xPore``, and find out that the first four clusters were from m6A signals in different phasese, while an additional one is in a m6Am-like motif. Here, we fix the phase of cluster #1 to #4 that assign the sequences without an "A" base centered to a specific downstream or upstream bases, by the pattern of the clusters. With such a method, we can succeed to correct the phases of the m6A and m6Am-like motifs.
+In variant call from ``Nanopre`` RNA sequencing, an obvious problem is that the signal might not directly come from called base itself, but might come from its adjacent bases. Here, we call such phenomenon "phase mismatch". In past, we might try to assign the signal of the variant to a selected adjacent base with some conditions. Now, with ``iMVP``, we can have a more rational assignment because we now have the prior knowledge about the clusters. In our pratices, we first cluster the signals from ``xPore``, and find that the first four clusters were from m6A signals in different phasese, while an additional one is in a m6Am-like motif. Here, we fix the phase of cluster #1 to #4 that assign the sequences without an "A" base centered to a specific downstream or upstream bases, by the pattern of the clusters. With such a method, we can correct the phases of the m6A and m6Am-like motifs.
 
 .. image:: ../Images/phase_matching.png
    :align: center
 
 Approximate clustering
 ----------------------
-When handling huge amount of sites, it is not easy for us to find a set of parameters perfectly clustering them. We, human beings, are also not good at finding clusters within millions of points. For most of the situations, like the global A-to-I RNA editing analysis, it is not necessary to assign very single point to a cluster. We want to have some snapshots. To solve this problem, we mimicks the density profiling step in ``HDBSCAN`` to generate a histogram of site density first. With the density histogram, we can isolate the clusters with computer visulization methods (e.g., functions in ``openCV``). In our practices, we firstly perform noise reduction to the histogram to filter out the low density connections between the clusters. Then we use ``find contours`` functions to link the connected pixels. We finally extract the clusters from the histogram and annotate them to the orignal sites. Read notebooks in ``RAPIDS`` folder for more information.
+When handling huge amount of sites, it is not easy for us to find a set of parameters perfectly clustering them. For most of the situations, like the global A-to-I RNA editing analysis, it is not necessary to assign very single point to a cluster. We want to have some snapshots. To solve this problem, we mimic the density profiling step in ``HDBSCAN`` to generate a histogram of site density first. With the density histogram, we can isolate the clusters with computer visulization methods (e.g., functions in ``openCV``). In our practices, we first perform noise reduction to the histogram to filter out the low density connections between the clusters. Then we use ``find contours`` functions to link the connected pixels. We finally extract the clusters from the histogram and annotate them to the orignal sites. Read notebooks in ``RAPIDS`` folder for more information.
 
 .. image:: ../Images/approximate_clustering.png
    :align: center
