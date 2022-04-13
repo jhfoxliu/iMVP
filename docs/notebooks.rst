@@ -42,11 +42,6 @@ m5C in developmental stages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 https://github.com/jhfoxliu/iMVP/tree/main/m5C%20study/Species_development
 
-
-PseudoU method comparison (not included in the current manuscript)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-https://github.com/jhfoxliu/iMVP/tree/main/pseudouridine%20study
-
 |
 
 Nanopre
