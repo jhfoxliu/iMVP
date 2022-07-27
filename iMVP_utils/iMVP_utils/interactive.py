@@ -601,7 +601,7 @@ def launch_backend(output_path="./output/"):
                         style = {'textAlign':'center'}), # , 'margin-left':'20%'
 
                 html.H3(
-                        "Version: 0.2.3; Contributed by Jing Yao, Jianheng Liu @ Zhang Lab (SYSU).",
+                        "Version: {}; Contributed by Jing Yao, Jianheng Liu @ Zhang Lab (SYSU).".format(iMVP_utils.__version__),
                         style = {'textAlign':'center'}), # , 'margin-left': '10%'
                 html.H3("Documents: https://readthedocs.org/iMVP/", style = {'textAlign':'center'}),
 
