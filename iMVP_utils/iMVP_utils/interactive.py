@@ -18,6 +18,7 @@ from dash import callback_context
 from flask import Flask
 import plotly.express as px
 import plotly.graph_objects as go
+import tempfile
 
 def launch_backend(output_path="./output/"):
     """The function to launch the backend for interactive
@@ -74,11 +75,26 @@ def launch_backend(output_path="./output/"):
         
         decoded = base64.b64decode(content_string)
         style_submit_button = {'width': '40%'}
-    
-        df = pd.read_csv(
-            io.StringIO(decoded.decode('utf-8').replace("\r\n", "\n").replace("\r", "\n").replace(">", "")),sep = "\n", header=None)
-        fa_data = pd.concat([df[::2].reset_index(drop=True),df[1::2].reset_index(drop=True)],axis=1)
-        fa_data.columns = ['sites','seq']
+        
+        time_stamp = time.time()
+        with open("browser_input_{t}.fa".format(t=time_stamp), "w") as tmp:
+            print(io.StringIO(decoded.decode('utf-8').replace("\r\n", "\n").replace("\r", "\n")).getvalue(), file=tmp)
+        
+        fa_data = pd.DataFrame()
+        sites = []
+        seqs = []
+        for seq in SeqIO.parse("browser_input_{t}.fa".format(t=time_stamp), "fasta"):
+            sites.append(seq.id)
+            seqs.append(str(seq.seq))
+        fa_data["sites"] = sites
+        fa_data["seq"] = seqs
+
+        os.remove("browser_input_{t}.fa".format(t=time_stamp))
+
+        # df = pd.read_csv(
+        #     io.StringIO(decoded.decode('utf-8').replace("\r\n", "\n").replace("\r", "\n").replace(">", "")),sep = "\n", header=None)
+        # fa_data = pd.concat([df[::2].reset_index(drop=True),df[1::2].reset_index(drop=True)],axis=1)
+        # fa_data.columns = ['sites','seq']
         # run HDBSACN
         df_HDBSCAN = interactive_functions.run_cluster(fa_data, output_path, input_parameters)
         
