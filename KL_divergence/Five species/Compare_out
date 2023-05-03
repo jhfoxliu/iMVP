@@ -1,0 +1,49 @@
+#INCLUSive GFF File
+#
+#The results in this file are NOT complete as long as there is no END-sign at the bottom of this file!
+#Please read MotifComparison Guidelines on our webserver to optimally evaluate below results.
+
+#query:query_consensus	match:match_consensus	score;(shiftm-d,shiftd-m)
+
+Human_TypeI.txt:rGGnn	Human_TypeI.txt:rGGnn	0;(0,0)
+Human_TypeI.txt:rGGnn	Mouse_TypeI.txt:rnnnn	0.0108059;(0,0)
+Human_TypeI.txt:rGGnn	XT_TypeI.txt:rnnnn	0.0325751;(0,0)
+Human_TypeI.txt:rGGnn	XL_TypeI.txt:rnnnn	0.0524272;(0,0)
+Human_TypeI.txt:rGGnn	ZF_TypeI.txt:rnnnn	0.0321156;(0,0)
+Human_TypeI.txt:rGGnn	Fly_TypeI.txt:nnnnn	0.0933345;(0,0)
+Mouse_TypeI.txt:rnnnn	Human_TypeI.txt:rGGnn	0.0108059;(0,0)
+Mouse_TypeI.txt:rnnnn	Mouse_TypeI.txt:rnnnn	0;(0,0)
+Mouse_TypeI.txt:rnnnn	XT_TypeI.txt:rnnnn	0.0233358;(0,0)
+Mouse_TypeI.txt:rnnnn	XL_TypeI.txt:rnnnn	0.0322451;(0,0)
+Mouse_TypeI.txt:rnnnn	ZF_TypeI.txt:rnnnn	0.0231885;(0,0)
+Mouse_TypeI.txt:rnnnn	Fly_TypeI.txt:nnnnn	0.0760713;(0,0)
+XT_TypeI.txt:rnnnn	Human_TypeI.txt:rGGnn	0.0325751;(0,0)
+XT_TypeI.txt:rnnnn	Mouse_TypeI.txt:rnnnn	0.0233358;(0,0)
+XT_TypeI.txt:rnnnn	XT_TypeI.txt:rnnnn	0;(0,0)
+XT_TypeI.txt:rnnnn	XL_TypeI.txt:rnnnn	0.00545083;(0,0)
+XT_TypeI.txt:rnnnn	ZF_TypeI.txt:rnnnn	0.00370093;(0,0)
+XT_TypeI.txt:rnnnn	Fly_TypeI.txt:nnnnn	0.0757675;(0,0)
+XL_TypeI.txt:rnnnn	Human_TypeI.txt:rGGnn	0.0524272;(0,0)
+XL_TypeI.txt:rnnnn	Mouse_TypeI.txt:rnnnn	0.0322451;(0,0)
+XL_TypeI.txt:rnnnn	XT_TypeI.txt:rnnnn	0.00545083;(0,0)
+XL_TypeI.txt:rnnnn	XL_TypeI.txt:rnnnn	0;(0,0)
+XL_TypeI.txt:rnnnn	ZF_TypeI.txt:rnnnn	0.0123083;(0,0)
+XL_TypeI.txt:rnnnn	Fly_TypeI.txt:nnnnn	0.0989;(0,0)
+ZF_TypeI.txt:rnnnn	Human_TypeI.txt:rGGnn	0.0321156;(0,0)
+ZF_TypeI.txt:rnnnn	Mouse_TypeI.txt:rnnnn	0.0231885;(0,0)
+ZF_TypeI.txt:rnnnn	XT_TypeI.txt:rnnnn	0.00370093;(0,0)
+ZF_TypeI.txt:rnnnn	XL_TypeI.txt:rnnnn	0.0123083;(0,0)
+ZF_TypeI.txt:rnnnn	ZF_TypeI.txt:rnnnn	0;(0,0)
+ZF_TypeI.txt:rnnnn	Fly_TypeI.txt:nnnnn	0.0591167;(0,0)
+Fly_TypeI.txt:nnnnn	Human_TypeI.txt:rGGnn	0.0933345;(0,0)
+Fly_TypeI.txt:nnnnn	Mouse_TypeI.txt:rnnnn	0.0760713;(0,0)
+Fly_TypeI.txt:nnnnn	XT_TypeI.txt:rnnnn	0.0757675;(0,0)
+Fly_TypeI.txt:nnnnn	XL_TypeI.txt:rnnnn	0.0989;(0,0)
+Fly_TypeI.txt:nnnnn	ZF_TypeI.txt:rnnnn	0.0591167;(0,0)
+Fly_TypeI.txt:nnnnn	Fly_TypeI.txt:nnnnn	0;(0,0)
+
+#SUMMARY of 6(DB-matrices)*6(INPUT-matrices) = 36 comparisons:
+#SIMILARS: 36.
+#NON-SIMILARS: 0.
+
+#END - Application ends successfully.
