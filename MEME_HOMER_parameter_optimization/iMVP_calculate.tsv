@@ -1,0 +1,2 @@
+id	time (sec)	CPU memory (MB)	true_motif	find_motif	average_similarity
+imvp	523	249	9	9	0.9949246689833342

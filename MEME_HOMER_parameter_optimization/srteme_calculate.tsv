@@ -1,0 +1,7 @@
+0	parameters	time (sec)	CPU memory (MB)	id	true_motif	all_motif	average_similarity
+1	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 8 --minw 6 --objfun de --p <input file> -oc <output path>	113	446	meme_1	0	2	0.27349989669289576
+2	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 12 --minw 6 --objfun de --p <input file> -oc <output path>	427	883	meme_2	0	4	0.3938736608306753
+3	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 15 --minw 6 --objfun de --p <input file> -oc <output path>	631	938	meme_3	0	4	0.2832162886095544
+4	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 8 --minw 6 --objfun cd --p <input file> -oc <output path>	57	201	meme_4	0	2	0.2738393321445196
+5	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 12 --minw 6 --objfun cd --p <input file> -oc <output path>	382	406	meme_5	0	5	0.47216616528313493
+6	/share/public/apps/meme/5.3.3/bin/streme --rna --nmotifs 10 --maxw 15 --minw 6 --objfun cd --p <input file> -oc <output path>	876	458	meme_6	0	5	0.4543653607160577

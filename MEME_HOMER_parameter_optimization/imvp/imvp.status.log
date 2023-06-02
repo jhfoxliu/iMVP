@@ -1,0 +1,36 @@
+Mon May 22 12:13:45 2023: sjm process ID: 32150
+Mon May 22 12:13:45 2023: starting
+Mon May 22 12:13:45 2023: submitted imvp (974022)
+Mon May 22 12:13:55 2023: job imvp running
+Mon May 22 12:14:05 2023: 1 running
+Mon May 22 12:14:25 2023: 1 running
+Mon May 22 12:14:45 2023: 1 running
+Mon May 22 12:15:05 2023: 1 running
+Mon May 22 12:15:25 2023: 1 running
+Mon May 22 12:15:45 2023: 1 running
+Mon May 22 12:16:05 2023: 1 running
+Mon May 22 12:16:25 2023: 1 running
+Mon May 22 12:16:45 2023: 1 running
+Mon May 22 12:17:05 2023: 1 running
+Mon May 22 12:17:25 2023: 1 running
+Mon May 22 12:17:45 2023: 1 running
+Mon May 22 12:18:05 2023: 1 running
+Mon May 22 12:18:25 2023: 1 running
+Mon May 22 12:18:45 2023: 1 running
+Mon May 22 12:19:05 2023: 1 running
+Mon May 22 12:19:25 2023: 1 running
+Mon May 22 12:19:45 2023: 1 running
+Mon May 22 12:20:05 2023: 1 running
+Mon May 22 12:20:25 2023: 1 running
+Mon May 22 12:20:31 2023: job imvp done
+Mon May 22 12:20:31 2023: finished
+
+Successful jobs:
+imvp (974022): 0:06:41 (380 sec, 1484/0 MB)
+
+Final summary:
+Mon May 22 12:20:31 2023: 1 done
+Total wallclock time: 0:06:41
+CPU time: 380 sec
+Maximum memory: 1484 MB
+Maximum swap: 0 MB

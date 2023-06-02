@@ -1,0 +1,22 @@
+UMAP
+UMAP time: 216.2647111415863 sec
+UMAP RAM: 0.0 MB
+==================================================
+
+HDBSCAN soft clustering time: 16.287206411361694 sec
+HDBSCAN soft clustering RAM: 0.0 Mb
+HDBSCAN cluster number: 10
+==================================================
+Cluster
+-1     15232
+ 1     13560
+ 2      8306
+ 3      9763
+ 4     25368
+ 5      7141
+ 6      4289
+ 7      2898
+ 8      5993
+ 9       348
+ 10    16952
+Name: Cluster, dtype: int64

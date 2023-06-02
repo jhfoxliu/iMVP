@@ -1,0 +1,17 @@
+log_dir /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/imvp/logs
+job_begin
+    name imvp
+    memory 100000 M
+    hostname node2
+    directory /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/imvp/
+    status done
+    id 974022
+    cpu_usage 380
+    wallclock 401
+    memory_usage 1484
+    swap_usage 0
+    cmd_begin
+source ~/.bashrc;
+/share/public1/data/yaoj/biosotf/miniconda3/bin/python3.9 /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/imvp/iMVP.fuction.py /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/sim_out.100k.final.fa /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/imvp/simulate_F10.tsv;
+    cmd_end
+job_end

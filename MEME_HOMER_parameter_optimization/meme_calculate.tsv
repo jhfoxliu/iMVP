@@ -1,0 +1,217 @@
+0	parameters	time (sec)	CPU memory (MB)	id	true_motif	find_motif	average_similarity
+1	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun classic -mod zoops <input file> -oc <output path>	315	216	meme_1	1	10	0.41290879333060354
+2	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun classic -mod zoops <input file> -oc <output path>	320	206	meme_2	1	10	0.42216188420369943
+3	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun classic -mod zoops <input file> -oc <output path>	330	199	meme_3	1	10	0.4205396546648627
+4	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun classic -mod zoops <input file> -oc <output path>	323	214	meme_4	1	10	0.44759556220791286
+5	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun classic -mod zoops <input file> -oc <output path>	493	200	meme_5	5	10	0.6873991948801538
+6	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun classic -mod zoops <input file> -oc <output path>	505	219	meme_6	5	10	0.6888480620810858
+7	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun classic -mod zoops <input file> -oc <output path>	509	217	meme_7	5	10	0.6863999353942688
+8	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun classic -mod zoops <input file> -oc <output path>	496	217	meme_8	5	10	0.6671534737488626
+9	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun classic -mod zoops <input file> -oc <output path>	478	201	meme_9	3	10	0.5258006089706829
+10	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun classic -mod zoops <input file> -oc <output path>	483	215	meme_10	4	10	0.5601304512946459
+11	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun classic -mod zoops <input file> -oc <output path>	490	201	meme_11	4	10	0.6000647210004207
+12	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun classic -mod zoops <input file> -oc <output path>	467	202	meme_12	4	10	0.5377528199035613
+13	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun de -mod zoops <input file> -oc <output path>	3492	393	meme_13	0	10	0.2642592857454919
+14	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun de -mod zoops <input file> -oc <output path>	3302	393	meme_14	0	10	0.2787581463543269
+15	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun de -mod zoops <input file> -oc <output path>	3543	393	meme_15	0	10	0.2876986115854022
+16	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun de -mod zoops <input file> -oc <output path>	3714	393	meme_16	0	10	0.33060483248476735
+17	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun de -mod zoops <input file> -oc <output path>	6008	393	meme_17	0	10	0.3195558518551764
+18	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun de -mod zoops <input file> -oc <output path>	5816	393	meme_18	0	10	0.41202414148854183
+19	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun de -mod zoops <input file> -oc <output path>	7064	393	meme_19	0	10	0.32090257786623677
+20	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun de -mod zoops <input file> -oc <output path>	6252	398	meme_20	0	10	0.3854020277298874
+21	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun de -mod zoops <input file> -oc <output path>	4981	393	meme_21	3	10	0.3840082891633467
+22	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun de -mod zoops <input file> -oc <output path>	5284	393	meme_22	2	10	0.35471641272459375
+23	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun de -mod zoops <input file> -oc <output path>	7339	393	meme_23	3	10	0.35081550919335713
+24	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun de -mod zoops <input file> -oc <output path>	7680	393	meme_24	3	10	0.452635941436957
+25	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun se -mod zoops <input file> -oc <output path>	4347	392	meme_25	0	10	0.12010957196768719
+26	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun se -mod zoops <input file> -oc <output path>	5167	392	meme_26	0	10	0.15777565801385968
+27	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun se -mod zoops <input file> -oc <output path>	5050	393	meme_27	0	10	0.12099464269376867
+28	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun se -mod zoops <input file> -oc <output path>	3984	397	meme_28	0	10	0.17691577725332616
+29	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun se -mod zoops <input file> -oc <output path>	6161	392	meme_29	2	10	0.5062793749075742
+30	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun se -mod zoops <input file> -oc <output path>	6047	392	meme_30	2	10	0.5358878603438249
+31	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun se -mod zoops <input file> -oc <output path>	9178	393	meme_31	2	10	0.46781639303411204
+32	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun se -mod zoops <input file> -oc <output path>	9086	391	meme_32	2	10	0.524873760764262
+33	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun se -mod zoops <input file> -oc <output path>	6354	382	meme_33	2	10	0.5268936155801804
+34	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun se -mod zoops <input file> -oc <output path>	6800	392	meme_34	2	10	0.5136807783188723
+35	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun se -mod zoops <input file> -oc <output path>	7040	391	meme_35	2	10	0.4399030493405568
+36	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun se -mod zoops <input file> -oc <output path>	5670	382	meme_36	2	10	0.5334769370278512
+37	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun cd -mod zoops <input file> -oc <output path>	4647	272	meme_37	0	10	0.4333362934976427
+38	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun cd -mod zoops <input file> -oc <output path>	5226	273	meme_38	0	10	0.4864725638720266
+39	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun cd -mod zoops <input file> -oc <output path>	5382	272	meme_39	0	10	0.4451309687737225
+40	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun cd -mod zoops <input file> -oc <output path>	5401	252	meme_40	0	10	0.40484431567112633
+41	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun cd -mod zoops <input file> -oc <output path>	7152	353	meme_41	1	10	0.47198416078439653
+42	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun cd -mod zoops <input file> -oc <output path>	8650	359	meme_42	0	10	0.44873732689028323
+43	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun cd -mod zoops <input file> -oc <output path>	9172	359	meme_43	0	10	0.4520321600073477
+44	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun cd -mod zoops <input file> -oc <output path>	8255	356	meme_44	0	10	0.4289655151807823
+45	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun cd -mod zoops <input file> -oc <output path>	7046	423	meme_45	0	10	0.4333362934976427
+46	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun cd -mod zoops <input file> -oc <output path>	6705	423	meme_46	0	10	0.4394688528230688
+47	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun cd -mod zoops <input file> -oc <output path>	5776	422	meme_47	0	10	0.3715114179258528
+48	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun cd -mod zoops <input file> -oc <output path>	6515	423	meme_48	0	10	0.41086597574610584
+49	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun nc -mod zoops <input file> -oc <output path>	372	326	meme_49	1	9	0.4620020607660151
+50	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun nc -mod zoops <input file> -oc <output path>	434	327	meme_50	1	10	0.4170252511831693
+51	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun nc -mod zoops <input file> -oc <output path>	432	320	meme_51	1	10	0.48419324273332726
+52	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun nc -mod zoops <input file> -oc <output path>	421	326	meme_52	1	10	0.4611740579642703
+53	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun nc -mod zoops <input file> -oc <output path>	635	466	meme_53	2	9	0.43316295759426393
+54	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun nc -mod zoops <input file> -oc <output path>	596	466	meme_54	2	10	0.4294507828268177
+55	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun nc -mod zoops <input file> -oc <output path>	590	465	meme_55	2	10	0.4618585912019523
+56	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun nc -mod zoops <input file> -oc <output path>	596	466	meme_56	1	10	0.40506462458509207
+57	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun nc -mod zoops <input file> -oc <output path>	589	605	meme_57	2	9	0.4860781798009687
+58	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun nc -mod zoops <input file> -oc <output path>	592	584	meme_58	2	10	0.5033937867335961
+59	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun nc -mod zoops <input file> -oc <output path>	601	605	meme_59	2	10	0.5276779886686598
+60	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun nc -mod zoops <input file> -oc <output path>	586	605	meme_60	0	10	0.40396926272039535
+61	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod zoops <input file> -oc <output path>	4519	272	meme_61	0	10	0.1377908673590997
+62	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod zoops <input file> -oc <output path>	4681	273	meme_62	0	10	0.17081716612406864
+63	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod zoops <input file> -oc <output path>	5079	274	meme_63	0	10	0.13945236483492368
+64	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod zoops <input file> -oc <output path>	5417	272	meme_64	0	10	0.181047966261659
+65	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod zoops <input file> -oc <output path>	5750	363	meme_65	0	10	0.3271058386097463
+66	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod zoops <input file> -oc <output path>	5325	362	meme_66	0	9	0.4408520721197086
+67	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod zoops <input file> -oc <output path>	5685	344	meme_67	0	10	0.3036361697386369
+68	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod zoops <input file> -oc <output path>	5809	361	meme_68	0	10	0.35322892961969526
+69	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod zoops <input file> -oc <output path>	5422	422	meme_69	0	10	0.33619430855117755
+70	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod zoops <input file> -oc <output path>	5358	425	meme_70	0	10	0.15338669354176088
+71	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod zoops <input file> -oc <output path>	4801	425	meme_71	0	10	0.2964688446167352
+72	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod zoops <input file> -oc <output path>	5073	422	meme_72	0	10	0.37192205259437505
+73	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun classic -mod anr <input file> -oc <output path>	2790	226	meme_73	1	7	0.4144898146170507
+74	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun classic -mod anr <input file> -oc <output path>	2696	230	meme_74	1	7	0.47742087752668966
+75	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun classic -mod anr <input file> -oc <output path>	2729	232	meme_75	0	9	0.33304413591762166
+76	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun classic -mod anr <input file> -oc <output path>	2683	226	meme_76	0	10	0.2985571488502987
+77	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun classic -mod anr <input file> -oc <output path>	5299	227	meme_77	4	9	0.9112867476061957
+78	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun classic -mod anr <input file> -oc <output path>	5306	233	meme_78	4	9	0.8586340601371188
+79	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun classic -mod anr <input file> -oc <output path>	4000	229	meme_79	3	10	0.7460631382356544
+80	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun classic -mod anr <input file> -oc <output path>	3912	224	meme_80	3	10	0.7717193112942116
+81	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun classic -mod anr <input file> -oc <output path>	3803	227	meme_81	4	9	0.8969285344522504
+82	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun classic -mod anr <input file> -oc <output path>	3700	231	meme_82	4	9	0.7820049404800161
+83	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun classic -mod anr <input file> -oc <output path>	3796	234	meme_83	3	10	0.7360527552080455
+84	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun classic -mod anr <input file> -oc <output path>	3800	231	meme_84	3	10	0.8656497197767088
+85	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun de -mod anr <input file> -oc <output path>	4006	463	meme_85	0	10	0.26115958821252433
+86	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun de -mod anr <input file> -oc <output path>	4974	442	meme_86	0	10	0.27034634713534034
+87	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun de -mod anr <input file> -oc <output path>	5296	435	meme_87	0	10	0.2878580141459493
+88	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun de -mod anr <input file> -oc <output path>	4186	461	meme_88	0	10	0.32533403818739176
+89	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun de -mod anr <input file> -oc <output path>	6874	439	meme_89	0	10	0.4111440995722407
+90	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun de -mod anr <input file> -oc <output path>	7175	444	meme_90	0	10	0.4414050812597668
+91	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun de -mod anr <input file> -oc <output path>	6884	454	meme_91	0	10	0.36002798086095017
+92	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun de -mod anr <input file> -oc <output path>	7434	426	meme_92	0	10	0.39707741381868394
+93	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun de -mod anr <input file> -oc <output path>	6700	437	meme_93	3	10	0.48153238903222306
+94	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun de -mod anr <input file> -oc <output path>	6436	444	meme_94	1	10	0.3490070772296553
+95	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun de -mod anr <input file> -oc <output path>	6805	437	meme_95	2	10	0.3017712532337347
+96	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun de -mod anr <input file> -oc <output path>	6867	429	meme_96	2	10	0.5155671233746082
+97	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun se -mod anr <input file> -oc <output path>	5681	432	meme_97	0	10	0.1132553039858869
+98	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun se -mod anr <input file> -oc <output path>	5142	459	meme_98	0	10	0.07899071120723017
+99	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun se -mod anr <input file> -oc <output path>	7610	437	meme_99	0	10	0.1012560230748698
+100	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun se -mod anr <input file> -oc <output path>	7265	440	meme_100	0	10	0.13927517549055385
+101	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun se -mod anr <input file> -oc <output path>	8193	438	meme_101	3	10	0.5685299534669754
+102	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun se -mod anr <input file> -oc <output path>	8677	442	meme_102	2	10	0.5805554787607813
+103	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun se -mod anr <input file> -oc <output path>	8586	439	meme_103	2	10	0.49965845552128885
+104	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun se -mod anr <input file> -oc <output path>	8518	432	meme_104	2	10	0.5546384801615828
+105	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun se -mod anr <input file> -oc <output path>	8046	435	meme_105	2	10	0.5268867372488109
+106	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun se -mod anr <input file> -oc <output path>	7773	442	meme_106	2	10	0.4305765820610826
+107	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun se -mod anr <input file> -oc <output path>	6351	437	meme_107	2	10	0.3701453888570135
+108	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun se -mod anr <input file> -oc <output path>	7570	433	meme_108	2	10	0.553773823378408
+109	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun cd -mod anr <input file> -oc <output path>	0	12	meme_109	0	0	0
+110	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_110	0	0	0
+111	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun cd -mod anr <input file> -oc <output path>	0	13	meme_111	0	0	0
+112	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_112	0	0	0
+113	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_113	0	0	0
+114	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_114	0	0	0
+115	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun cd -mod anr <input file> -oc <output path>	0	20	meme_115	0	0	0
+116	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun cd -mod anr <input file> -oc <output path>	0	17	meme_116	0	0	0
+117	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun cd -mod anr <input file> -oc <output path>	0	15	meme_117	0	0	0
+118	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_118	0	0	0
+119	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun cd -mod anr <input file> -oc <output path>	0	19	meme_119	0	0	0
+120	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun cd -mod anr <input file> -oc <output path>	0	13	meme_120	0	0	0
+121	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun nc -mod anr <input file> -oc <output path>	2758	338	meme_121	1	7	0.4144898146170507
+122	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun nc -mod anr <input file> -oc <output path>	2753	340	meme_122	1	8	0.49612184216192623
+123	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun nc -mod anr <input file> -oc <output path>	2762	340	meme_123	0	9	0.474017492768344
+124	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun nc -mod anr <input file> -oc <output path>	2718	339	meme_124	0	10	0.4512067614047689
+125	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun nc -mod anr <input file> -oc <output path>	3964	474	meme_125	3	10	0.5682141731509479
+126	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun nc -mod anr <input file> -oc <output path>	3975	467	meme_126	4	10	0.5700093854350561
+127	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun nc -mod anr <input file> -oc <output path>	3970	477	meme_127	2	10	0.4803842829629271
+128	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun nc -mod anr <input file> -oc <output path>	4029	476	meme_128	3	10	0.5063187235605843
+129	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun nc -mod anr <input file> -oc <output path>	3773	601	meme_129	2	10	0.6463056434044057
+130	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun nc -mod anr <input file> -oc <output path>	3832	611	meme_130	3	10	0.6116455138507282
+131	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun nc -mod anr <input file> -oc <output path>	3770	611	meme_131	2	10	0.5500254153843571
+132	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun nc -mod anr <input file> -oc <output path>	3833	611	meme_132	2	10	0.6678992995537147
+133	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_133	0	0	0
+134	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_134	0	0	0
+135	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_135	0	0	0
+136	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_136	0	0	0
+137	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod anr <input file> -oc <output path>	0	18	meme_137	0	0	0
+138	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod anr <input file> -oc <output path>	0	9	meme_138	0	0	0
+139	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_139	0	0	0
+140	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_140	0	0	0
+141	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod anr <input file> -oc <output path>	0	14	meme_141	0	0	0
+142	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod anr <input file> -oc <output path>	0	12	meme_142	0	0	0
+143	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod anr <input file> -oc <output path>	0	19	meme_143	0	0	0
+144	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod anr <input file> -oc <output path>	0	18	meme_144	0	0	0
+145	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun classic -mod oops <input file> -oc <output path>	116	222	meme_145	1	3	0.6348105033934244
+146	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun classic -mod oops <input file> -oc <output path>	114	222	meme_146	1	3	0.6177651090731989
+147	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun classic -mod oops <input file> -oc <output path>	160	226	meme_147	1	3	0.6278480933615324
+148	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun classic -mod oops <input file> -oc <output path>	161	224	meme_148	0	3	0.6823200734728946
+149	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun classic -mod oops <input file> -oc <output path>	180	218	meme_149	1	3	0.6348105033934244
+150	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun classic -mod oops <input file> -oc <output path>	180	212	meme_150	1	3	0.6177651090731989
+151	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun classic -mod oops <input file> -oc <output path>	165	216	meme_151	1	3	0.6278480933615324
+152	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun classic -mod oops <input file> -oc <output path>	171	208	meme_152	0	2	0.5280772942143168
+153	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun classic -mod oops <input file> -oc <output path>	156	202	meme_153	0	2	0.5724725711806657
+154	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun classic -mod oops <input file> -oc <output path>	160	219	meme_154	0	2	0.5736221412481232
+155	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun classic -mod oops <input file> -oc <output path>	162	221	meme_155	0	2	0.5753991976918544
+156	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun classic -mod oops <input file> -oc <output path>	122	203	meme_156	0	2	0.5774434913668063
+157	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun de -mod oops <input file> -oc <output path>	1189	395	meme_157	0	3	0.5447488103412804
+158	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun de -mod oops <input file> -oc <output path>	1132	386	meme_158	0	3	0.6270192373300448
+159	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun de -mod oops <input file> -oc <output path>	1105	387	meme_159	0	3	0.5581918049957667
+160	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun de -mod oops <input file> -oc <output path>	1438	400	meme_160	0	3	0.4160594736715704
+161	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun de -mod oops <input file> -oc <output path>	1893	401	meme_161	0	3	0.5447488103412804
+162	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun de -mod oops <input file> -oc <output path>	1800	386	meme_162	0	3	0.6270192373300448
+163	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun de -mod oops <input file> -oc <output path>	1796	386	meme_163	0	3	0.5581918049957667
+164	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun de -mod oops <input file> -oc <output path>	1960	392	meme_164	0	3	0.4160594736715704
+165	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun de -mod oops <input file> -oc <output path>	1873	399	meme_165	0	3	0.5447488103412804
+166	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun de -mod oops <input file> -oc <output path>	1384	389	meme_166	0	3	0.6270192373300448
+167	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun de -mod oops <input file> -oc <output path>	1438	394	meme_167	0	3	0.5581918049957667
+168	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun de -mod oops <input file> -oc <output path>	1613	386	meme_168	0	3	0.4160594736715704
+169	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun se -mod oops <input file> -oc <output path>	1409	393	meme_169	0	3	0.5447488103412804
+170	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun se -mod oops <input file> -oc <output path>	1424	393	meme_170	0	3	0.6270192373300448
+171	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun se -mod oops <input file> -oc <output path>	1241	388	meme_171	0	3	0.5581918049957667
+172	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun se -mod oops <input file> -oc <output path>	1442	387	meme_172	0	3	0.5960395655053078
+173	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun se -mod oops <input file> -oc <output path>	1578	387	meme_173	0	3	0.5447488103412804
+174	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun se -mod oops <input file> -oc <output path>	1602	386	meme_174	0	3	0.6270192373300448
+175	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun se -mod oops <input file> -oc <output path>	1547	386	meme_175	0	3	0.5581918049957667
+176	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun se -mod oops <input file> -oc <output path>	1595	398	meme_176	0	3	0.5960395655053078
+177	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun se -mod oops <input file> -oc <output path>	2084	389	meme_177	0	3	0.5447488103412804
+178	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun se -mod oops <input file> -oc <output path>	2087	388	meme_178	0	3	0.6270192373300448
+179	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun se -mod oops <input file> -oc <output path>	1516	386	meme_179	0	3	0.5581918049957667
+180	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun se -mod oops <input file> -oc <output path>	1501	386	meme_180	0	3	0.5960395655053078
+181	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun cd -mod oops <input file> -oc <output path>	766	206	meme_181	0	3	0.597878472018264
+182	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun cd -mod oops <input file> -oc <output path>	910	203	meme_182	0	3	0.5993619616772408
+183	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun cd -mod oops <input file> -oc <output path>	868	218	meme_183	0	3	0.5945242339185123
+184	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun cd -mod oops <input file> -oc <output path>	1372	219	meme_184	0	3	0.5820899033412076
+185	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun cd -mod oops <input file> -oc <output path>	2078	218	meme_185	0	3	0.597878472018264
+186	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun cd -mod oops <input file> -oc <output path>	1541	205	meme_186	0	3	0.5993619616772408
+187	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun cd -mod oops <input file> -oc <output path>	1609	203	meme_187	0	3	0.5945242339185123
+188	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun cd -mod oops <input file> -oc <output path>	1777	203	meme_188	0	3	0.5820899033412076
+189	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun cd -mod oops <input file> -oc <output path>	1277	203	meme_189	0	3	0.597878472018264
+190	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun cd -mod oops <input file> -oc <output path>	1514	217	meme_190	0	3	0.5993619616772408
+191	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun cd -mod oops <input file> -oc <output path>	1639	203	meme_191	0	3	0.5945242339185123
+192	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun cd -mod oops <input file> -oc <output path>	1503	218	meme_192	0	3	0.5820899033412076
+193	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 0 -objfun nc -mod oops <input file> -oc <output path>	34	204	meme_193	1	3	0.6348105033934244
+194	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 1 -objfun nc -mod oops <input file> -oc <output path>	33	220	meme_194	1	3	0.6177651090731989
+195	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 2 -objfun nc -mod oops <input file> -oc <output path>	33	219	meme_195	1	3	0.629855428666139
+196	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -markov_order 3 -objfun nc -mod oops <input file> -oc <output path>	38	218	meme_196	0	4	0.5119126975114832
+197	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 0 -objfun nc -mod oops <input file> -oc <output path>	49	206	meme_197	1	3	0.6348105033934244
+198	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun nc -mod oops <input file> -oc <output path>	41	201	meme_198	1	3	0.6177651090731989
+199	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 2 -objfun nc -mod oops <input file> -oc <output path>	42	206	meme_199	1	3	0.629855428666139
+200	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 3 -objfun nc -mod oops <input file> -oc <output path>	50	205	meme_200	0	2	0.6078289655532936
+201	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 0 -objfun nc -mod oops <input file> -oc <output path>	46	198	meme_201	0	2	0.5724725711806657
+202	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 1 -objfun nc -mod oops <input file> -oc <output path>	46	198	meme_202	0	2	0.5870805763618654
+203	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 2 -objfun nc -mod oops <input file> -oc <output path>	38	205	meme_203	0	2	0.5861442336576328
+204	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -markov_order 3 -objfun nc -mod oops <input file> -oc <output path>	48	213	meme_204	0	2	0.5855165683120204
+205	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod oops <input file> -oc <output path>	1285	203	meme_205	0	3	0.5980106133577309
+206	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod oops <input file> -oc <output path>	1324	209	meme_206	0	3	0.5994583949355621
+207	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod oops <input file> -oc <output path>	1224	210	meme_207	0	3	0.5947620489931799
+208	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 8 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod oops <input file> -oc <output path>	1194	212	meme_208	0	3	0.5821053781110276
+209	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod oops <input file> -oc <output path>	1776	203	meme_209	0	1	0.6140392355446831
+210	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod oops <input file> -oc <output path>	1675	203	meme_210	0	1	0.6098599209263993
+211	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod oops <input file> -oc <output path>	1840	203	meme_211	0	2	0.6683515905194046
+212	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 12 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod oops <input file> -oc <output path>	1665	218	meme_212	0	2	0.6654985901851911
+213	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 0 -objfun ce -mod oops <input file> -oc <output path>	1480	203	meme_213	0	3	0.5980106133577309
+214	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 1 -objfun ce -mod oops <input file> -oc <output path>	1455	203	meme_214	0	3	0.5994583949355621
+215	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 2 -objfun ce -mod oops <input file> -oc <output path>	1052	218	meme_215	0	3	0.5947620489931799
+216	/share/public/apps/meme/5.3.3/bin/meme -rna -nmotifs 10 -maxw 15 -minw 6 -cefrac 0.25 -markov_order 3 -objfun ce -mod oops <input file> -oc <output path>	1044	203	meme_216	0	3	0.5821053781110276

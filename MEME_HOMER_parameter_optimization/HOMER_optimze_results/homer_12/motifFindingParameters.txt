@@ -1,0 +1,1 @@
+cmd = /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/sim_out.100k.final.fa fasta /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/HOMER/results_1/homer_12 -basic -noknown -nocheck -rna -bits -S 10 -len 12
