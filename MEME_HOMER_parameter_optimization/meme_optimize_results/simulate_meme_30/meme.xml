@@ -174,7 +174,7 @@
 ]>
 <!-- Begin document body -->
 <MEME version="5.3.3" release="Sun Feb 7 15:39:52 2021 -0800">
-<training_set primary_sequences="/share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/sim_out.fa" primary_count="109850" primary_positions="2306850" control_sequences="Primary sequences shuffled preserving 2-mers" control_count="109850" control_positions="2306850">
+<training_set primary_sequences="../../sim_out.100k.final.fa" primary_count="109850" primary_positions="2306850" control_sequences="Primary sequences shuffled preserving 2-mers" control_count="109850" control_positions="2306850">
 <alphabet name="RNA" like="rna">
 <letter id="A" symbol="A" name="Adenine" colour="CC0000"/>
 <letter id="C" symbol="C" name="Cytosine" colour="0000CC"/>
@@ -194,15 +194,15 @@
 </alphabet>
 <letter_frequencies>
 <alphabet_array>
-<value letter_id="A">0.276</value>
+<value letter_id="A">0.253</value>
 <value letter_id="C">0.235</value>
-<value letter_id="G">0.233</value>
-<value letter_id="U">0.256</value>
+<value letter_id="G">0.231</value>
+<value letter_id="U">0.282</value>
 </alphabet_array>
 </letter_frequencies>
 </training_set>
 <model>
-<command_line>meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun se -mod zoops /share/public1/data/yaoj/projects/1-active/iMVP_revision_202304/optimize/sim_out.fa -oc ../results/simulate_meme_30 </command_line>
+<command_line>meme -rna -nmotifs 10 -maxw 12 -minw 6 -markov_order 1 -objfun se -mod zoops ../../sim_out.100k.final.fa -oc ../results/simulate_meme_30 </command_line>
 <host>master</host>
 <type>zoops</type>
 <nmotifs>10</nmotifs>
@@ -234,86 +234,80 @@
 <reason_for_stopping>Stopped because requested number of motifs (10) found.</reason_for_stopping>
 <background_frequencies source="--sequences--" order="1">
 <alphabet_array>
-<value letter_id="A">0.276</value>
+<value letter_id="A">0.253</value>
 <value letter_id="C">0.235</value>
-<value letter_id="G">0.233</value>
-<value letter_id="U">0.257</value>
+<value letter_id="G">0.231</value>
+<value letter_id="U">0.282</value>
 </alphabet_array>
 </background_frequencies>
 </model>
 <motifs>
-<motif id="motif_1" name="GYMAUAAA" alt="MEME-1" width="8" sites="20113" ic="12.8" re="12.3" llr="171376" p_value="1.2e-4503" e_value="1.2e-4503" bayes_threshold="8.35801" elapsed_time="1122.146287">
+<motif id="motif_1" name="CAAUUAUU" alt="MEME-1" width="8" sites="18215" ic="12.5" re="11.9" llr="149926" p_value="2.9e-3900" e_value="2.9e-3900" bayes_threshold="8.44754" elapsed_time="2712.597899">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">-54</value>
-<value letter_id="C">-147</value>
-<value letter_id="G">164</value>
-<value letter_id="U">-2094</value>
+<value letter_id="A">-135</value>
+<value letter_id="C">125</value>
+<value letter_id="G">-58</value>
+<value letter_id="U">-58</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-2094</value>
-<value letter_id="C">148</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">42</value>
+<value letter_id="A">181</value>
+<value letter_id="C">-353</value>
+<value letter_id="G">-2080</value>
+<value letter_id="U">-155</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">67</value>
-<value letter_id="C">117</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">-290</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-2080</value>
+<value letter_id="G">-2080</value>
+<value letter_id="U">-2080</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-2094</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">-2094</value>
+<value letter_id="A">-2080</value>
+<value letter_id="C">-2080</value>
+<value letter_id="G">-2080</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-2094</value>
-<value letter_id="C">-2094</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-2080</value>
+<value letter_id="C">-43</value>
+<value letter_id="G">-2080</value>
+<value letter_id="U">155</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-2094</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">-2094</value>
+<value letter_id="A">196</value>
+<value letter_id="C">-2080</value>
+<value letter_id="G">-387</value>
+<value letter_id="U">-2080</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-2094</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">-2094</value>
+<value letter_id="A">-411</value>
+<value letter_id="C">-2080</value>
+<value letter_id="G">-2080</value>
+<value letter_id="U">181</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-2094</value>
-<value letter_id="G">-2094</value>
-<value letter_id="U">-2094</value>
+<value letter_id="A">-2080</value>
+<value letter_id="C">-2080</value>
+<value letter_id="G">-200</value>
+<value letter_id="U">174</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
 <probabilities>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">0.189231</value>
-<value letter_id="C">0.084821</value>
-<value letter_id="G">0.725948</value>
-<value letter_id="U">0.000000</value>
+<value letter_id="A">0.098984</value>
+<value letter_id="C">0.557178</value>
+<value letter_id="G">0.154927</value>
+<value letter_id="U">0.188910</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.656739</value>
+<value letter_id="A">0.883832</value>
+<value letter_id="C">0.020258</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.343261</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.438274</value>
-<value letter_id="C">0.527370</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.034356</value>
+<value letter_id="U">0.095910</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">1.000000</value>
@@ -328,16 +322,145 @@
 <value letter_id="U">1.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">1.000000</value>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.173538</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.826462</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.984244</value>
 <value letter_id="C">0.000000</value>
+<value letter_id="G">0.015756</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.014603</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.985397</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.057700</value>
+<value letter_id="U">0.942300</value>
+</alphabet_array>
+</alphabet_matrix>
+</probabilities>
+<regular_expression>
+CAAUUAUU
+</regular_expression>
+<contributing_sites>
+</contributing_sites>
+</motif>
+<motif id="motif_2" name="AUUGCAYMA" alt="MEME-2" width="9" sites="9270" ic="12.9" re="12.7" llr="81686" p_value="2.0e-1891" e_value="2.0e-1891" bayes_threshold="9.30148" elapsed_time="5651.242802">
+<scores>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">165</value>
+<value letter_id="C">-276</value>
+<value letter_id="G">-41</value>
+<value letter_id="U">-1982</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1982</value>
+<value letter_id="C">-1982</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1982</value>
+<value letter_id="C">-1982</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-323</value>
+<value letter_id="C">-1982</value>
+<value letter_id="G">177</value>
+<value letter_id="U">-61</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1982</value>
+<value letter_id="C">209</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">-1982</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">163</value>
+<value letter_id="C">-249</value>
+<value letter_id="G">-128</value>
+<value letter_id="U">-177</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-175</value>
+<value letter_id="C">119</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">47</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">129</value>
+<value letter_id="C">70</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">-935</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">199</value>
+<value letter_id="C">-1982</value>
+<value letter_id="G">-1982</value>
+<value letter_id="U">-1982</value>
+</alphabet_array>
+</alphabet_matrix>
+</scores>
+<probabilities>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">0.790831</value>
+<value letter_id="C">0.034736</value>
+<value letter_id="G">0.174434</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">1.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">1.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.026861</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.788997</value>
+<value letter_id="U">0.184142</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">1.000000</value>
 <value letter_id="G">0.000000</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
+<value letter_id="A">0.780798</value>
+<value letter_id="C">0.041640</value>
+<value letter_id="G">0.094822</value>
+<value letter_id="U">0.082740</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.074973</value>
+<value letter_id="C">0.533765</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
+<value letter_id="U">0.391262</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.617799</value>
+<value letter_id="C">0.381769</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000431</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">1.000000</value>
@@ -348,114 +471,84 @@
 </alphabet_matrix>
 </probabilities>
 <regular_expression>
-G[CU][CA]AUAAA
+AUUGCA[CU][AC]A
 </regular_expression>
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_2" name="AARAUGGCBGC" alt="MEME-2" width="11" sites="9059" ic="14.5" re="14.5" llr="91005" p_value="1.3e-2242" e_value="1.3e-2242" bayes_threshold="9.18212" elapsed_time="1939.514971">
+<motif id="motif_3" name="GGGGRUUCCCC" alt="MEME-3" width="11" sites="4722" ic="16.1" re="16.7" llr="54582" p_value="3.6e-919" e_value="3.6e-919" bayes_threshold="10.0786" elapsed_time="8435.265608">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">184</value>
-<value letter_id="C">-1979</value>
-<value letter_id="G">-400</value>
-<value letter_id="U">-1979</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">-1885</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">182</value>
-<value letter_id="C">-510</value>
-<value letter_id="G">-350</value>
-<value letter_id="U">-643</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">-1885</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">26</value>
-<value letter_id="C">-59</value>
-<value letter_id="G">105</value>
-<value letter_id="U">-304</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">-1885</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1979</value>
-<value letter_id="G">-1979</value>
-<value letter_id="U">-1979</value>
+<value letter_id="A">-160</value>
+<value letter_id="C">-1885</value>
+<value letter_id="G">199</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1979</value>
-<value letter_id="C">-1979</value>
-<value letter_id="G">-1979</value>
-<value letter_id="U">196</value>
+<value letter_id="A">132</value>
+<value letter_id="C">-239</value>
+<value letter_id="G">49</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1979</value>
-<value letter_id="C">-1979</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1979</value>
+<value letter_id="A">16</value>
+<value letter_id="C">-1885</value>
+<value letter_id="G">-119</value>
+<value letter_id="U">113</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1979</value>
-<value letter_id="C">-1979</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1979</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">19</value>
+<value letter_id="G">-126</value>
+<value letter_id="U">117</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-139</value>
-<value letter_id="C">180</value>
-<value letter_id="G">-1979</value>
-<value letter_id="U">-176</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">164</value>
+<value letter_id="G">-1885</value>
+<value letter_id="U">-6</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-132</value>
-<value letter_id="C">-4</value>
-<value letter_id="G">78</value>
-<value letter_id="U">2</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">204</value>
+<value letter_id="G">-1885</value>
+<value letter_id="U">-294</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-126</value>
-<value letter_id="C">-107</value>
-<value letter_id="G">154</value>
-<value letter_id="U">-141</value>
+<value letter_id="A">-1885</value>
+<value letter_id="C">209</value>
+<value letter_id="G">-1885</value>
+<value letter_id="U">-1885</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-58</value>
-<value letter_id="C">152</value>
-<value letter_id="G">-256</value>
-<value letter_id="U">-129</value>
+<value letter_id="A">-251</value>
+<value letter_id="C">190</value>
+<value letter_id="G">-234</value>
+<value letter_id="U">-302</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
 <probabilities>
 <alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">0.985429</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.014571</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.969533</value>
-<value letter_id="C">0.006844</value>
-<value letter_id="G">0.020642</value>
-<value letter_id="U">0.002980</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.330610</value>
-<value letter_id="C">0.155977</value>
-<value letter_id="G">0.482283</value>
-<value letter_id="U">0.031129</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
@@ -469,115 +562,151 @@ G[CU][CA]AUAAA
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.105089</value>
-<value letter_id="C">0.819185</value>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">1.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.083439</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.916561</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.630241</value>
+<value letter_id="C">0.044896</value>
+<value letter_id="G">0.324862</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.282719</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.101440</value>
+<value letter_id="U">0.615841</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.268107</value>
+<value letter_id="G">0.096569</value>
+<value letter_id="U">0.635324</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.729987</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.075726</value>
+<value letter_id="U">0.270013</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.110277</value>
-<value letter_id="C">0.227729</value>
-<value letter_id="G">0.401369</value>
-<value letter_id="U">0.260625</value>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.963363</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.036637</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.115355</value>
-<value letter_id="C">0.112043</value>
-<value letter_id="G">0.676234</value>
-<value letter_id="U">0.096368</value>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">1.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.183685</value>
-<value letter_id="C">0.671928</value>
-<value letter_id="G">0.039629</value>
-<value letter_id="U">0.104758</value>
+<value letter_id="A">0.044473</value>
+<value letter_id="C">0.875265</value>
+<value letter_id="G">0.045532</value>
+<value letter_id="U">0.034731</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
 <regular_expression>
-AA[GA]AUGGC[GUC]GC
+GGGG[AG][UA][UC][CU]CCC
 </regular_expression>
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_3" name="UGUUURCWYW" alt="MEME-3" width="10" sites="6492" ic="13.8" re="13.7" llr="61736" p_value="3.3e-1405" e_value="3.3e-1405" bayes_threshold="9.82631" elapsed_time="2691.466254">
+<motif id="motif_4" name="UGUUURCWYW" alt="MEME-4" width="10" sites="6364" ic="13.9" re="13.2" llr="58297" p_value="1.8e-1350" e_value="1.8e-1350" bayes_threshold="9.85691" elapsed_time="11029.144313">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">-848</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">-1931</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1928</value>
+<value letter_id="C">-1928</value>
+<value letter_id="G">-1928</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-158</value>
-<value letter_id="C">-512</value>
-<value letter_id="G">195</value>
-<value letter_id="U">-1931</value>
+<value letter_id="A">-157</value>
+<value letter_id="C">-1928</value>
+<value letter_id="G">199</value>
+<value letter_id="U">-1928</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1931</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">-1931</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1928</value>
+<value letter_id="C">-854</value>
+<value letter_id="G">-1928</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1931</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">-548</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1928</value>
+<value letter_id="C">-1928</value>
+<value letter_id="G">-1928</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1931</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">-210</value>
-<value letter_id="U">188</value>
+<value letter_id="A">-1928</value>
+<value letter_id="C">-1928</value>
+<value letter_id="G">-183</value>
+<value letter_id="U">173</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">101</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">84</value>
-<value letter_id="U">-324</value>
+<value letter_id="A">111</value>
+<value letter_id="C">-426</value>
+<value letter_id="G">83</value>
+<value letter_id="U">-320</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1931</value>
-<value letter_id="C">201</value>
-<value letter_id="G">-1931</value>
-<value letter_id="U">-225</value>
+<value letter_id="A">-1928</value>
+<value letter_id="C">202</value>
+<value letter_id="G">-1928</value>
+<value letter_id="U">-253</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">23</value>
-<value letter_id="C">-125</value>
-<value letter_id="G">-1931</value>
-<value letter_id="U">118</value>
+<value letter_id="A">38</value>
+<value letter_id="C">-144</value>
+<value letter_id="G">-1928</value>
+<value letter_id="U">105</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-310</value>
-<value letter_id="C">89</value>
-<value letter_id="G">-197</value>
-<value letter_id="U">88</value>
+<value letter_id="A">-298</value>
+<value letter_id="C">86</value>
+<value letter_id="G">-186</value>
+<value letter_id="U">77</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">62</value>
-<value letter_id="C">-1931</value>
-<value letter_id="G">-363</value>
-<value letter_id="U">112</value>
+<value letter_id="A">79</value>
+<value letter_id="C">-1928</value>
+<value letter_id="G">-429</value>
+<value letter_id="U">97</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
 <probabilities>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">0.000770</value>
+<value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.999230</value>
+<value letter_id="U">1.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.092267</value>
-<value letter_id="C">0.006778</value>
-<value letter_id="G">0.900955</value>
+<value letter_id="A">0.085324</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.914676</value>
 <value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000629</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.999371</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
@@ -588,44 +717,38 @@ AA[GA]AUGGC[GUC]GC
 <alphabet_array>
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">0.005237</value>
-<value letter_id="U">0.994763</value>
+<value letter_id="G">0.065053</value>
+<value letter_id="U">0.934947</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.546669</value>
+<value letter_id="C">0.012256</value>
+<value letter_id="G">0.410434</value>
+<value letter_id="U">0.030641</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.054375</value>
-<value letter_id="U">0.945625</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.555607</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.417283</value>
-<value letter_id="U">0.027110</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.945933</value>
+<value letter_id="C">0.951288</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.054067</value>
+<value letter_id="U">0.048712</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.322243</value>
-<value letter_id="C">0.098429</value>
+<value letter_id="A">0.328724</value>
+<value letter_id="C">0.086424</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.579328</value>
+<value letter_id="U">0.584852</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.032039</value>
-<value letter_id="C">0.435151</value>
-<value letter_id="G">0.059458</value>
-<value letter_id="U">0.473352</value>
+<value letter_id="A">0.032055</value>
+<value letter_id="C">0.425047</value>
+<value letter_id="G">0.063482</value>
+<value letter_id="U">0.479415</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.423136</value>
+<value letter_id="A">0.436204</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">0.018792</value>
-<value letter_id="U">0.558071</value>
+<value letter_id="G">0.011785</value>
+<value letter_id="U">0.552011</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
@@ -635,56 +758,314 @@ UGUUU[AG]C[UA][UC][UA]
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_4" name="CAUUGUYY" alt="MEME-4" width="8" sites="5724" ic="12.7" re="12.8" llr="50604" p_value="1.4e-1103" e_value="1.4e-1103" bayes_threshold="10.3044" elapsed_time="3477.403772">
+<motif id="motif_5" name="CMGGAAGU" alt="MEME-5" width="8" sites="3666" ic="12.9" re="13.2" llr="33499" p_value="1.8e-731" e_value="1.8e-731" bayes_threshold="10.8604" elapsed_time="13691.221602">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">199</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">-193</value>
+<value letter_id="A">-245</value>
+<value letter_id="C">179</value>
+<value letter_id="G">-73</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">129</value>
-<value letter_id="C">-1913</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">34</value>
+<value letter_id="A">137</value>
+<value letter_id="C">56</value>
+<value letter_id="G">-1848</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">-1913</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1848</value>
+<value letter_id="C">-1848</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">-1913</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1848</value>
+<value letter_id="C">-1848</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">-1913</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1913</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-1848</value>
+<value letter_id="G">-1848</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">-1913</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">196</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-1848</value>
+<value letter_id="G">-1848</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">105</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">100</value>
+<value letter_id="A">-191</value>
+<value letter_id="C">-1848</value>
+<value letter_id="G">201</value>
+<value letter_id="U">-1848</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1913</value>
-<value letter_id="C">90</value>
-<value letter_id="G">-1913</value>
-<value letter_id="U">113</value>
+<value letter_id="A">-137</value>
+<value letter_id="C">-94</value>
+<value letter_id="G">-1848</value>
+<value letter_id="U">147</value>
+</alphabet_array>
+</alphabet_matrix>
+</scores>
+<probabilities>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">0.046372</value>
+<value letter_id="C">0.813966</value>
+<value letter_id="G">0.139662</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.654119</value>
+<value letter_id="C">0.345881</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">1.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">1.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">1.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">1.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.067376</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.932624</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.097654</value>
+<value letter_id="C">0.121931</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.780415</value>
+</alphabet_array>
+</alphabet_matrix>
+</probabilities>
+<regular_expression>
+C[AC]GGAAGU
+</regular_expression>
+<contributing_sites>
+</contributing_sites>
+</motif>
+<motif id="motif_6" name="AARAUGGCBGC" alt="MEME-6" width="11" sites="2653" ic="14.7" re="15.0" llr="27504" p_value="3.2e-548" e_value="3.2e-548" bayes_threshold="11.0195" elapsed_time="16038.112295">
+<scores>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">196</value>
+<value letter_id="C">-1802</value>
+<value letter_id="G">-390</value>
+<value letter_id="U">-796</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">198</value>
+<value letter_id="C">-928</value>
+<value letter_id="G">-1802</value>
+<value letter_id="U">-1802</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">48</value>
+<value letter_id="C">-60</value>
+<value letter_id="G">103</value>
+<value letter_id="U">-385</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">199</value>
+<value letter_id="C">-1802</value>
+<value letter_id="G">-1802</value>
+<value letter_id="U">-1802</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1802</value>
+<value letter_id="C">-1802</value>
+<value letter_id="G">-1802</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1802</value>
+<value letter_id="C">-1802</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1802</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1802</value>
+<value letter_id="C">-1802</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1802</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-101</value>
+<value letter_id="C">178</value>
+<value letter_id="G">-1802</value>
+<value letter_id="U">-201</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-108</value>
+<value letter_id="C">-4</value>
+<value letter_id="G">82</value>
+<value letter_id="U">-20</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-106</value>
+<value letter_id="C">-101</value>
+<value letter_id="G">154</value>
+<value letter_id="U">-164</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-48</value>
+<value letter_id="C">149</value>
+<value letter_id="G">-212</value>
+<value letter_id="U">-141</value>
+</alphabet_array>
+</alphabet_matrix>
+</scores>
+<probabilities>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">0.983415</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.015454</value>
+<value letter_id="U">0.001131</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.999623</value>
+<value letter_id="C">0.000377</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.352808</value>
+<value letter_id="C">0.155296</value>
+<value letter_id="G">0.472296</value>
+<value letter_id="U">0.019600</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">1.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">1.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">1.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">1.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.125141</value>
+<value letter_id="C">0.805126</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.069732</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.119110</value>
+<value letter_id="C">0.227667</value>
+<value letter_id="G">0.407840</value>
+<value letter_id="U">0.245383</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.120995</value>
+<value letter_id="C">0.116472</value>
+<value letter_id="G">0.672069</value>
+<value letter_id="U">0.090464</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.180927</value>
+<value letter_id="C">0.659631</value>
+<value letter_id="G">0.053147</value>
+<value letter_id="U">0.106295</value>
+</alphabet_array>
+</alphabet_matrix>
+</probabilities>
+<regular_expression>
+AA[GA]AUGGC[GUC]GC
+</regular_expression>
+<contributing_sites>
+</contributing_sites>
+</motif>
+<motif id="motif_7" name="CWUUGUYY" alt="MEME-7" width="8" sites="5671" ic="12.7" re="12.2" llr="47825" p_value="8.9e-1020" e_value="8.9e-1020" bayes_threshold="10.3228" elapsed_time="17178.414737">
+<scores>
+<alphabet_matrix>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">196</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">-173</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">139</value>
+<value letter_id="C">-1911</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">25</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">-1911</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">-1911</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">-1911</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1911</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">-1911</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">183</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">104</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">87</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1911</value>
+<value letter_id="C">96</value>
+<value letter_id="G">-1911</value>
+<value letter_id="U">95</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
@@ -692,15 +1073,15 @@ UGUUU[AG]C[UA][UC][UA]
 <alphabet_matrix>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.932914</value>
+<value letter_id="C">0.915183</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.067086</value>
+<value letter_id="U">0.084817</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.674878</value>
+<value letter_id="A">0.663904</value>
 <value letter_id="C">0.000000</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.325122</value>
+<value letter_id="U">0.336096</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
@@ -728,15 +1109,15 @@ UGUUU[AG]C[UA][UC][UA]
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.485500</value>
+<value letter_id="C">0.484042</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.514500</value>
+<value letter_id="U">0.515958</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.439553</value>
+<value letter_id="C">0.456181</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.560447</value>
+<value letter_id="U">0.543819</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
@@ -746,423 +1127,90 @@ C[AU]UUGU[UC][UC]
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_5" name="CWCACCUG" alt="MEME-5" width="8" sites="3872" ic="13.4" re="13.6" llr="36542" p_value="3.7e-817" e_value="3.7e-817" bayes_threshold="10.8513" elapsed_time="4316.916510">
-<scores>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">191</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">-113</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">36</value>
-<value letter_id="C">-161</value>
-<value letter_id="G">-113</value>
-<value letter_id="U">86</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">197</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">-168</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1856</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">-1856</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">209</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">-1856</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">209</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">-1856</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">-1856</value>
-<value letter_id="G">-1856</value>
-<value letter_id="U">196</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1856</value>
-<value letter_id="C">-1856</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1856</value>
-</alphabet_array>
-</alphabet_matrix>
-</scores>
-<probabilities>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.883006</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.116994</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.352531</value>
-<value letter_id="C">0.076705</value>
-<value letter_id="G">0.106147</value>
-<value letter_id="U">0.464618</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.920196</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.079804</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">1.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">1.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">1.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-</alphabet_matrix>
-</probabilities>
-<regular_expression>
-C[UA]CACCUG
-</regular_expression>
-<contributing_sites>
-</contributing_sites>
-</motif>
-<motif id="motif_6" name="RUGASUCA" alt="MEME-6" width="8" sites="1724" ic="14.0" re="13.9" llr="16662" p_value="2.0e-359" e_value="2.0e-359" bayes_threshold="11.8911" elapsed_time="4866.779011">
-<scores>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">86</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">110</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1740</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">-1740</value>
-<value letter_id="U">196</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1740</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">-1740</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1740</value>
-<value letter_id="C">136</value>
-<value letter_id="G">76</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1740</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">-1740</value>
-<value letter_id="U">196</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1740</value>
-<value letter_id="C">209</value>
-<value letter_id="G">-1740</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1740</value>
-<value letter_id="G">-1740</value>
-<value letter_id="U">-1740</value>
-</alphabet_array>
-</alphabet_matrix>
-</scores>
-<probabilities>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">0.501740</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.498260</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">1.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.604988</value>
-<value letter_id="G">0.395012</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">1.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-</alphabet_matrix>
-</probabilities>
-<regular_expression>
-[AG]UGA[CG]UCA
-</regular_expression>
-<contributing_sites>
-</contributing_sites>
-</motif>
-<motif id="motif_7" name="CDCUAAUK" alt="MEME-7" width="8" sites="4155" ic="10.4" re="10.1" llr="29208" p_value="1.5e-353" e_value="1.5e-353" bayes_threshold="10.7878" elapsed_time="5395.182488">
-<scores>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">-140</value>
-<value letter_id="C">167</value>
-<value letter_id="G">-151</value>
-<value letter_id="U">-195</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">61</value>
-<value letter_id="C">-221</value>
-<value letter_id="G">42</value>
-<value letter_id="U">-25</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1866</value>
-<value letter_id="C">149</value>
-<value letter_id="G">-43</value>
-<value letter_id="U">-62</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-170</value>
-<value letter_id="C">-1866</value>
-<value letter_id="G">-1866</value>
-<value letter_id="U">183</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1866</value>
-<value letter_id="G">-1866</value>
-<value letter_id="U">-1866</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">185</value>
-<value letter_id="C">-1866</value>
-<value letter_id="G">-575</value>
-<value letter_id="U">-1866</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1866</value>
-<value letter_id="C">-1866</value>
-<value letter_id="G">-1866</value>
-<value letter_id="U">196</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1866</value>
-<value letter_id="C">-1866</value>
-<value letter_id="G">54</value>
-<value letter_id="U">137</value>
-</alphabet_array>
-</alphabet_matrix>
-</scores>
-<probabilities>
-<alphabet_matrix>
-<alphabet_array>
-<value letter_id="A">0.104452</value>
-<value letter_id="C">0.747052</value>
-<value letter_id="G">0.082070</value>
-<value letter_id="U">0.066426</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.420939</value>
-<value letter_id="C">0.050782</value>
-<value letter_id="G">0.312876</value>
-<value letter_id="U">0.215403</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.659687</value>
-<value letter_id="G">0.173285</value>
-<value letter_id="U">0.167028</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.084958</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.915042</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.995668</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.004332</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.338147</value>
-<value letter_id="U">0.661853</value>
-</alphabet_array>
-</alphabet_matrix>
-</probabilities>
-<regular_expression>
-C[AGU]CUAAU[UG]
-</regular_expression>
-<contributing_sites>
-</contributing_sites>
-</motif>
-<motif id="motif_8" name="AGGUCASMNUG" alt="MEME-8" width="11" sites="591" ic="13.8" re="14.0" llr="5731" p_value="1.8e-087" e_value="1.8e-087" bayes_threshold="13.1362" elapsed_time="6075.461315">
+<motif id="motif_8" name="AGGUCASMNUG" alt="MEME-8" width="11" sites="1284" ic="13.3" re="13.6" llr="12137" p_value="9.0e-222" e_value="9.0e-222" bayes_threshold="12.0384" elapsed_time="18151.543682">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
 <value letter_id="A">144</value>
-<value letter_id="C">-1585</value>
-<value letter_id="G">11</value>
-<value letter_id="U">-1585</value>
+<value letter_id="C">-543</value>
+<value letter_id="G">42</value>
+<value letter_id="U">-1697</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1585</value>
-<value letter_id="C">-1585</value>
-<value letter_id="G">207</value>
-<value letter_id="U">-378</value>
+<value letter_id="A">-1697</value>
+<value letter_id="C">-1697</value>
+<value letter_id="G">205</value>
+<value letter_id="U">-272</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1585</value>
-<value letter_id="C">-1585</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1585</value>
+<value letter_id="A">-1697</value>
+<value letter_id="C">-1697</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1697</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1585</value>
-<value letter_id="C">-1585</value>
-<value letter_id="G">-141</value>
-<value letter_id="U">183</value>
+<value letter_id="A">-1697</value>
+<value letter_id="C">-1697</value>
+<value letter_id="G">-161</value>
+<value letter_id="U">171</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1585</value>
+<value letter_id="A">-1697</value>
 <value letter_id="C">209</value>
-<value letter_id="G">-1585</value>
-<value letter_id="U">-1585</value>
+<value letter_id="G">-1697</value>
+<value letter_id="U">-1697</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1585</value>
-<value letter_id="G">-1585</value>
-<value letter_id="U">-1585</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-1697</value>
+<value letter_id="G">-1697</value>
+<value letter_id="U">-1697</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1585</value>
-<value letter_id="C">122</value>
-<value letter_id="G">72</value>
-<value letter_id="U">-189</value>
+<value letter_id="A">-230</value>
+<value letter_id="C">123</value>
+<value letter_id="G">62</value>
+<value letter_id="U">-267</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-10</value>
-<value letter_id="C">85</value>
-<value letter_id="G">-16</value>
-<value letter_id="U">-120</value>
+<value letter_id="A">4</value>
+<value letter_id="C">80</value>
+<value letter_id="G">-37</value>
+<value letter_id="U">-89</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-29</value>
-<value letter_id="C">67</value>
-<value letter_id="G">-15</value>
-<value letter_id="U">-42</value>
+<value letter_id="A">-36</value>
+<value letter_id="C">58</value>
+<value letter_id="G">20</value>
+<value letter_id="U">-59</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">-59</value>
-<value letter_id="C">-379</value>
-<value letter_id="G">-182</value>
-<value letter_id="U">152</value>
+<value letter_id="C">-139</value>
+<value letter_id="G">-251</value>
+<value letter_id="U">132</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-192</value>
-<value letter_id="C">-242</value>
-<value letter_id="G">192</value>
-<value letter_id="U">-1585</value>
+<value letter_id="A">-146</value>
+<value letter_id="C">-453</value>
+<value letter_id="G">196</value>
+<value letter_id="U">-1697</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
 <probabilities>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">0.747885</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.252115</value>
+<value letter_id="A">0.685358</value>
+<value letter_id="C">0.005452</value>
+<value letter_id="G">0.309190</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">0.981387</value>
-<value letter_id="U">0.018613</value>
+<value letter_id="G">0.957165</value>
+<value letter_id="U">0.042835</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
@@ -1173,8 +1221,8 @@ C[AGU]CUAAU[UG]
 <alphabet_array>
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">0.087986</value>
-<value letter_id="U">0.912014</value>
+<value letter_id="G">0.075545</value>
+<value letter_id="U">0.924455</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
@@ -1189,144 +1237,114 @@ C[AGU]CUAAU[UG]
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.546531</value>
-<value letter_id="G">0.384095</value>
-<value letter_id="U">0.069374</value>
+<value letter_id="A">0.051402</value>
+<value letter_id="C">0.549065</value>
+<value letter_id="G">0.355140</value>
+<value letter_id="U">0.044393</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.257191</value>
-<value letter_id="C">0.423012</value>
-<value letter_id="G">0.208122</value>
-<value letter_id="U">0.111675</value>
+<value letter_id="A">0.259346</value>
+<value letter_id="C">0.409657</value>
+<value letter_id="G">0.179128</value>
+<value letter_id="U">0.151869</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.225042</value>
-<value letter_id="C">0.373942</value>
-<value letter_id="G">0.209814</value>
-<value letter_id="U">0.191201</value>
+<value letter_id="A">0.197040</value>
+<value letter_id="C">0.349688</value>
+<value letter_id="G">0.265576</value>
+<value letter_id="U">0.187695</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.182741</value>
-<value letter_id="C">0.016920</value>
-<value letter_id="G">0.065990</value>
-<value letter_id="U">0.734349</value>
+<value letter_id="A">0.167445</value>
+<value letter_id="C">0.089564</value>
+<value letter_id="G">0.040498</value>
+<value letter_id="U">0.702492</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.072758</value>
-<value letter_id="C">0.043993</value>
-<value letter_id="G">0.883249</value>
+<value letter_id="A">0.091900</value>
+<value letter_id="C">0.010125</value>
+<value letter_id="G">0.897975</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
 <regular_expression>
-[AG]GGUCA[CG][CAG][CAG]UG
+[AG]GGUCA[CG][CA][CG]UG
 </regular_expression>
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_9" name="GUUMGUGCGAY" alt="MEME-9" width="11" sites="33" ic="14.9" re="15.1" llr="346" p_value="8.1e-001" e_value="1.4e+000" bayes_threshold="15.9874" elapsed_time="6588.533186">
+<motif id="motif_9" name="GRUGACUCA" alt="MEME-9" width="9" sites="172" ic="15.3" re="15.3" llr="1827" p_value="1.7e-025" e_value="1.7e-025" bayes_threshold="14.5976" elapsed_time="19254.540213">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">-1169</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1169</value>
+<value letter_id="A">8</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">166</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-218</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">-1169</value>
-<value letter_id="U">187</value>
+<value letter_id="A">92</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">118</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-60</value>
-<value letter_id="C">-95</value>
-<value letter_id="G">-14</value>
-<value letter_id="U">92</value>
+<value letter_id="A">-1407</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">-1407</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">106</value>
-<value letter_id="C">85</value>
-<value letter_id="G">-1169</value>
-<value letter_id="U">-1169</value>
+<value letter_id="A">-1407</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">211</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1169</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1169</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">-1407</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1169</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">-1169</value>
-<value letter_id="U">196</value>
+<value letter_id="A">-1407</value>
+<value letter_id="C">154</value>
+<value letter_id="G">47</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-18</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">170</value>
-<value letter_id="U">-1169</value>
+<value letter_id="A">-1407</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">-1407</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-318</value>
-<value letter_id="C">150</value>
-<value letter_id="G">-136</value>
-<value letter_id="U">-27</value>
+<value letter_id="A">-1407</value>
+<value letter_id="C">209</value>
+<value letter_id="G">-1407</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">-1169</value>
-<value letter_id="C">-1169</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1169</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">157</value>
-<value letter_id="C">-137</value>
-<value letter_id="G">-1169</value>
-<value letter_id="U">-150</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1169</value>
-<value letter_id="C">137</value>
-<value letter_id="G">-1169</value>
-<value letter_id="U">62</value>
+<value letter_id="A">199</value>
+<value letter_id="C">-1407</value>
+<value letter_id="G">-1407</value>
+<value letter_id="U">-1407</value>
 </alphabet_array>
 </alphabet_matrix>
 </scores>
 <probabilities>
 <alphabet_matrix>
 <alphabet_array>
-<value letter_id="A">0.000000</value>
+<value letter_id="A">0.267442</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">1.000000</value>
+<value letter_id="G">0.732558</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.060606</value>
+<value letter_id="A">0.476744</value>
 <value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.939394</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.181818</value>
-<value letter_id="C">0.121212</value>
-<value letter_id="G">0.212121</value>
-<value letter_id="U">0.484848</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.575758</value>
-<value letter_id="C">0.424242</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">1.000000</value>
+<value letter_id="G">0.523256</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
@@ -1336,57 +1354,57 @@ C[AGU]CUAAU[UG]
 <value letter_id="U">1.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.242424</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.757576</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.030303</value>
-<value letter_id="C">0.666667</value>
-<value letter_id="G">0.090909</value>
-<value letter_id="U">0.212121</value>
-</alphabet_array>
-<alphabet_array>
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
 <value letter_id="G">1.000000</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">0.818182</value>
-<value letter_id="C">0.090909</value>
+<value letter_id="A">1.000000</value>
+<value letter_id="C">0.000000</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.090909</value>
+<value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.606061</value>
+<value letter_id="C">0.680233</value>
+<value letter_id="G">0.319767</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.000000</value>
 <value letter_id="G">0.000000</value>
-<value letter_id="U">0.393939</value>
+<value letter_id="U">1.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">1.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">1.000000</value>
+<value letter_id="C">0.000000</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.000000</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
 <regular_expression>
-GU[UG][AC]GU[GA][CU]GA[CU]
+[GA][GA]UGA[CG]UCA
 </regular_expression>
 <contributing_sites>
 </contributing_sites>
 </motif>
-<motif id="motif_10" name="UUCGCAGA" alt="MEME-10" width="8" sites="12" ic="16.0" re="16.0" llr="133" p_value="9.8e-001" e_value="2.4e+000" bayes_threshold="17.174" elapsed_time="7094.912589">
+<motif id="motif_10" name="UCGCGYGCCG" alt="MEME-10" width="10" sites="12" ic="16.3" re="16.8" llr="140" p_value="1.0e+000" e_value="3.9e+000" bayes_threshold="16.3301" elapsed_time="20180.260885">
 <scores>
 <alphabet_matrix>
 <alphabet_array>
 <value letter_id="A">-1023</value>
 <value letter_id="C">-1023</value>
 <value letter_id="G">-1023</value>
-<value letter_id="U">196</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">-1023</value>
-<value letter_id="C">-1023</value>
-<value letter_id="G">-1023</value>
-<value letter_id="U">196</value>
+<value letter_id="U">183</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">-1023</value>
@@ -1397,7 +1415,7 @@ GU[UG][AC]GU[GA][CU]GA[CU]
 <alphabet_array>
 <value letter_id="A">-1023</value>
 <value letter_id="C">-1023</value>
-<value letter_id="G">210</value>
+<value letter_id="G">211</value>
 <value letter_id="U">-1023</value>
 </alphabet_array>
 <alphabet_array>
@@ -1407,21 +1425,39 @@ GU[UG][AC]GU[GA][CU]GA[CU]
 <value letter_id="U">-1023</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1023</value>
+<value letter_id="A">-1023</value>
+<value letter_id="C">-49</value>
+<value letter_id="G">185</value>
+<value letter_id="U">-1023</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1023</value>
+<value letter_id="C">83</value>
+<value letter_id="G">-1023</value>
+<value letter_id="U">105</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1</value>
+<value letter_id="C">-49</value>
+<value letter_id="G">134</value>
+<value letter_id="U">-1023</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1023</value>
+<value letter_id="C">183</value>
+<value letter_id="G">-1023</value>
+<value letter_id="U">-76</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">-1023</value>
+<value letter_id="C">209</value>
 <value letter_id="G">-1023</value>
 <value letter_id="U">-1023</value>
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">-1023</value>
 <value letter_id="C">-1023</value>
-<value letter_id="G">210</value>
-<value letter_id="U">-1023</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">186</value>
-<value letter_id="C">-1023</value>
-<value letter_id="G">-1023</value>
+<value letter_id="G">211</value>
 <value letter_id="U">-1023</value>
 </alphabet_array>
 </alphabet_matrix>
@@ -1436,12 +1472,6 @@ GU[UG][AC]GU[GA][CU]GA[CU]
 </alphabet_array>
 <alphabet_array>
 <value letter_id="A">0.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
-<value letter_id="U">1.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">0.000000</value>
 <value letter_id="C">1.000000</value>
 <value letter_id="G">0.000000</value>
 <value letter_id="U">0.000000</value>
@@ -1459,8 +1489,32 @@ GU[UG][AC]GU[GA][CU]GA[CU]
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 <alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.166667</value>
+<value letter_id="G">0.833333</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.416667</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.583333</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.250000</value>
+<value letter_id="C">0.166667</value>
+<value letter_id="G">0.583333</value>
+<value letter_id="U">0.000000</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">0.833333</value>
+<value letter_id="G">0.000000</value>
+<value letter_id="U">0.166667</value>
+</alphabet_array>
+<alphabet_array>
+<value letter_id="A">0.000000</value>
+<value letter_id="C">1.000000</value>
 <value letter_id="G">0.000000</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
@@ -1468,18 +1522,12 @@ GU[UG][AC]GU[GA][CU]GA[CU]
 <value letter_id="A">0.000000</value>
 <value letter_id="C">0.000000</value>
 <value letter_id="G">1.000000</value>
-<value letter_id="U">0.000000</value>
-</alphabet_array>
-<alphabet_array>
-<value letter_id="A">1.000000</value>
-<value letter_id="C">0.000000</value>
-<value letter_id="G">0.000000</value>
 <value letter_id="U">0.000000</value>
 </alphabet_array>
 </alphabet_matrix>
 </probabilities>
 <regular_expression>
-UUCGCAGA
+UCGCG[UC][GA]CCG
 </regular_expression>
 <contributing_sites>
 </contributing_sites>
