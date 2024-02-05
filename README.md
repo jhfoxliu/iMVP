@@ -82,20 +82,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-**THE SOFTWARE IS WELCOMED TO ANYBODY FOR ACADEMIC USAGE. PLEASE DO NOT USE 
-THIS SOFTWARE IN YOUR MANUSCRIPT SENT TO THE EDITORS BEFORE WE FORMALLY HAVE
-A CITATION ACCESS.**
-
-
 ## Contact
 
 For any bugs, please post them in `Issues`. 
 
-For the issues about iMVP framework, you can also contact `Jiangheng Liu` (jhfoxliu@gmail.com) directly.
+For the issues about iMVP framework, you can also contact `Jiangheng Liu` (jhfoxliu@gmail.com or jil4026@med.cornell.edu) directly.
 
 For the issues about the interactive interface (bugs, feature requests, and etc.), please contact `Jing Yao` (yaoj39@mail2.sysu.edu.cn).
 
 
 ## Citation
 
-NaN
+Liu, J., Huang, T., Yao, J. et al. Epitranscriptomic subtyping, visualization, and denoising by global motif visualization. Nat Commun 14, 5944 (2023). https://doi.org/10.1038/s41467-023-41653-4
